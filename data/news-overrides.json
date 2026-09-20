@@ -1,0 +1,35 @@
+{
+  "description": "按原文 URL 填写分类校正。每条必须有 topic 和 reason，可选 question、readingHint。引导文字不是新闻摘要。",
+  "items": {
+    "https://openai.com/index/1password": {
+      "topic": "applications",
+      "reason": "标题讨论工程生产率案例；摘要中的 security 不改变这篇案例的主题。未据此确认其效果数字。",
+      "question": "标题里的提升幅度，究竟怎样算出来？",
+      "readingHint": "在原文找基线、统计周期、参与人数和人工复核成本。一个团队的案例不能直接推广到所有团队。"
+    },
+    "https://openai.com/index/introducing-chatgpt-financial-services": {
+      "topic": "applications",
+      "reason": "标题介绍金融服务产品；research 在此不直接表示科学研究。",
+      "question": "它接入了什么资料，又由谁核对输出？",
+      "readingHint": "区分产品宣布的能力、可用条件与机构实际采用后的结果。留意资料时效和访问权限。"
+    },
+    "https://openai.com/index/navier-stokes-solution": {
+      "topic": "science",
+      "reason": "标题属于数学研究议题；这项归类不表示认可证明或确认问题已解决。",
+      "question": "这是一项研究主张，还是已经独立检验的结论？",
+      "readingHint": "回到论文或证明本身，寻找适用条件、审查过程与独立复核。发布标题不能代替这些证据。"
+    },
+    "https://openai.com/index/safety-overview-gpt-6-astra": {
+      "topic": "society",
+      "reason": "标题明确以安全评估为主题；模型名不是本条的主分类依据。"
+    },
+    "https://huggingface.co/blog/security-incident-july-2026": {
+      "topic": "society",
+      "reason": "标题明确为安全事件披露；不是普通产品应用文章。"
+    },
+    "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber": {
+      "topic": "models",
+      "reason": "标题首先介绍一个模型版本；安全使用边界仍需结合原文阅读。"
+    }
+  }
+}
