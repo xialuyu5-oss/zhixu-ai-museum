@@ -8,6 +8,8 @@
 
 `assets/research-workbench.png` 和 `assets/human-ai-workbench.png` 为 AI 生成的教学情境插画。它们不是历史照片、提案原件或真实系统测评结果。网页中的交互图表使用自建教学数据，相关边界在展品中标明。
 
+`assets/github/cover.jpg` 为使用 Codex 内置图像生成工具制作的仓库概念封面；`assets/github/entrance.png` 与 `assets/github/exhibit.png` 为 v0.15.0 实际页面截图。封面不是产品界面截图；具体来源和生成提示见 `docs/github-visuals.md`。
+
 ## 文献、馆藏与新闻
 
 网页保留论文、课程、规范和公开新闻的来源链接。来源索引位于 `src/catalog.json`，新闻原标题、原摘要、来源与时间保留在 `data/news.json`，译文另存于 `data/news-translations.json`。第三方内容的权利归相应权利人，不能将本仓库的公开状态解释为对第三方内容的重新授权。
