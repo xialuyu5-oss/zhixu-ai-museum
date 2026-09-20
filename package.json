@@ -1,0 +1,13 @@
+{
+  "name": "zhixu-ai-museum",
+  "version": "0.15.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write src/*.js src/*.css tests/*.cjs",
+    "format:check": "prettier --check src/*.js src/*.css tests/*.cjs",
+    "test": "node tests/core-regression.cjs && node tests/depth-regression.cjs && node tests/model-regression.cjs && node tests/i18n-regression.cjs && node tests/news-localization.cjs"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
