@@ -1,0 +1,256 @@
+[
+  ["机器分界", "Model threshold", "モデルのしきい値"],
+  ["检验标准", "Inspection standard", "検査基準"],
+  ["机器分界与检验标准", "Model threshold and inspection standard", "モデルのしきい値と検査基準"],
+  [
+    "实线是机器当前分界，虚线是工厂 6 mm 标准。圆点是两个未参与训练的新零件。",
+    "The solid line is the model threshold; the dashed line is the factory's 6 mm standard. Dots show two new parts excluded from training.",
+    "実線はモデルのしきい値、破線は工場の 6 mm 基準です。点は学習に使っていない 2 つの部品です。"
+  ],
+  ["这一站，先看懂什么", "What to look for here", "ここで注目すること"],
+  ["带着问题打开资料", "A question to read with", "問いを持って資料を開く"],
+  ["寻找规律", "Find patterns", "規則を見つける"],
+  ["新情况", "New cases", "新しい事例"],
+  ["当前资料", "Current material", "今回の資料"],
+  ["生成回答", "Generate a response", "回答を生成"],
+  ["质量检查", "Check quality", "品質を確認"],
+  ["实际成本", "Actual cost", "実際の費用"],
+  ["要做的事", "Your task", "取り組むこと"],
+  ["产品能力", "Product capabilities", "製品の機能"],
+  ["人工确认", "Human confirmation", "人による確認"],
+  ["完成条件", "Done criteria", "完了条件"],
+  ["使用频率", "Usage frequency", "利用頻度"],
+  ["收费方式", "Pricing model", "料金体系"],
+  ["服务条件", "Service terms", "サービスの条件"],
+  ["模型提出", "Model proposes", "モデルが提案"],
+  ["工具执行", "Tool acts", "ツールが実行"],
+  ["系统检查", "System checks", "システムが確認"],
+  ["目标与资料", "Goal and sources", "目標と資料"],
+  ["权限与预算", "Permissions and budget", "権限と予算"],
+  ["独立样例", "Independent cases", "独立した事例"],
+  ["复现失败", "Reproduce failures", "失敗を再現"],
+  ["修改与复查", "Revise and recheck", "修正して再確認"],
+  ["数据位置", "Data location", "データの所在"],
+  ["运行资源", "Runtime resources", "実行リソース"],
+  ["维护条件", "Maintenance needs", "保守の条件"],
+  ["代码版本", "Code version", "コードの版"],
+  ["依赖许可", "Dependency licenses", "依存関係のライセンス"],
+  ["交付范围", "Delivery scope", "納品範囲"],
+  ["构建产物", "Build artifacts", "ビルド成果物"],
+  ["环境验证", "Environment checks", "環境の検証"],
+  ["故障回查", "Trace failures", "障害を追跡"],
+  ["新消息", "New reports", "新しい情報"],
+  ["原始来源", "Original source", "一次資料"],
+  ["相关知识", "Related knowledge", "関連する知識"],
+  ["日期与条件", "Date and conditions", "日付と条件"],
+  ["实验与证据", "Tests and evidence", "実験と根拠"],
+  ["不同解释", "Other explanations", "別の解釈"],
+  ["共同生活", "Living together", "共に生きる"],
+  [
+    "同一句话可以被切成不同片段；同一批样本也可能支持不止一条规则。表示方式与训练例子，都会影响后面的判断。",
+    "The same sentence can be split in different ways, and the same examples can support several rules. Representations and training examples both shape later judgments.",
+    "同じ文でも区切り方は一つではなく、同じ例から複数の規則が成り立つこともあります。表現の仕方と学習例の両方が、その後の判断に影響します。"
+  ],
+  [
+    "训练全对，为什么还需要新数据？",
+    "Why test on new data if training answers are all correct?",
+    "学習データで全問正解でも、新しいデータが必要なのはなぜ？"
+  ],
+  [
+    "参数保存训练形成的数值关系，上下文提供这一次可用的资料，注意力参与组织其中的联系。三者各有作用，不能彼此替代。",
+    "Parameters store numerical relationships formed during training. Context supplies material for this run, and attention helps relate it. Each has a different role.",
+    "パラメータは学習で形成された数値的な関係を保持し、コンテキストは今回使う資料を提供します。注意機構はその関係の処理に関わります。三者の役割は異なります。"
+  ],
+  [
+    "把资料放进上下文，就等于模型永远记住了吗？",
+    "Does putting material in context mean the model remembers it forever?",
+    "コンテキストに入れた資料を、モデルはずっと覚えているのでしょうか？"
+  ],
+  [
+    "先用自己的任务检查质量，再比较延迟、费用、可部署性与许可。一次调用便宜，不一定意味着完成一件事便宜。",
+    "Check quality on your task, then compare latency, cost, deployment options and licenses. A cheap call does not always mean a cheap completed task.",
+    "自分のタスクで品質を確認し、応答時間、費用、導入方法、ライセンスを比較します。1 回の呼び出しが安くても、仕事全体が安く済むとは限りません。"
+  ],
+  [
+    "如果要反复返工，哪一个选择更合适？",
+    "Which option works better when rework is included?",
+    "手戻りも含めると、どの選択肢が適切でしょうか？"
+  ],
+  [
+    "从整理、搜索、生成或执行等具体动作出发选工具。能生成建议的产品，未必能读取所需资料或执行最后一步。",
+    "Choose tools for specific actions: organize, search, generate or execute. A product that suggests a plan may lack access to the sources or the ability to finish the task.",
+    "整理、検索、生成、実行など、具体的な作業からツールを選びます。提案ができても、必要な資料を読めるとは限らず、最後まで実行できるとも限りません。"
+  ],
+  [
+    "你需要一份建议，还是一个经过检查的结果？",
+    "Do you need a suggestion or a verified result?",
+    "必要なのは提案ですか、それとも確認済みの結果ですか？"
+  ],
+  [
+    "把背景、可用资料和验收条件一起交代。检索提供候选材料，仍要检查来源、时间与适用范围。",
+    "Provide background, available sources and acceptance criteria together. Retrieval finds candidate material; its origin, date and scope still need checking.",
+    "背景、使える資料、完了の判定条件を一緒に伝えます。検索で得た資料も、出典、日付、適用範囲の確認が必要です。"
+  ],
+  [
+    "哪一条关键信息缺失时，助手应该先停下来？",
+    "Which missing information should make the assistant stop?",
+    "どの重要な情報が欠けたら、助手はいったん止まるべきでしょうか？"
+  ],
+  [
+    "订阅与 API 通常是不同的使用方式。先估计任务量，再分开看计费单位、额度、上下文和可用功能。馆藏价格需回到官方核验。",
+    "Subscriptions and APIs usually serve different usage modes. Estimate task volume, then check billing units, quotas, context and features. Verify archived prices with official sources.",
+    "サブスクリプションと API では利用形態が異なることが一般的です。作業量を見積もり、課金単位、利用枠、コンテキスト、機能を確認します。資料中の価格は公式情報で再確認してください。"
+  ],
+  [
+    "真正影响你成本的，是调用次数还是返工次数？",
+    "What drives your cost: calls or rework?",
+    "費用を左右するのは、呼び出し回数でしょうか、手戻りの回数でしょうか？"
+  ],
+  [
+    "Agent 需要行动与反馈的循环。连接协议解决如何对接；运行系统负责权限、停止条件与结果检查。",
+    "An agent needs a loop of action and feedback. Connection protocols define interfaces; the runtime handles permissions, stopping conditions and result checks.",
+    "エージェントには実行とフィードバックの循環が必要です。接続プロトコルは連携方法を定め、実行システムは権限、停止条件、結果の確認を担います。"
+  ],
+  [
+    "工具说“成功”之后，谁来确认事情真的完成？",
+    "Who verifies completion after a tool reports success?",
+    "ツールが「成功」と返した後、誰が本当の完了を確認しますか？"
+  ],
+  [
+    "先把任务拆成可检查的步骤，再给每一步需要的能力。让失败、拒绝审批和资料缺失也有明确的去向。",
+    "Break the task into checkable steps and give each only the capabilities it needs. Define what happens after failure, denied approval or missing information.",
+    "タスクを確認可能な手順に分け、各手順に必要な能力を与えます。失敗、承認の拒否、資料不足の際の対応も明確にします。"
+  ],
+  [
+    "哪个动作必须等人确认，为什么？",
+    "Which action needs human confirmation, and why?",
+    "どの操作には人の確認が必要で、それはなぜですか？"
+  ],
+  [
+    "用事先确定的预期检查结果；从失败记录反查原因。演示成功是起点，重复执行和异常路径同样需要证据。",
+    "Check results against expectations set in advance and trace failures from records. A successful demo is a start; repeated runs and exception paths also need evidence.",
+    "事前に定めた期待結果と照合し、失敗の記録から原因を調べます。デモの成功は出発点です。繰り返し実行や異常時の動作にも根拠が必要です。"
+  ],
+  [
+    "你的检查能发现“看起来成功”的错误吗？",
+    "Can your checks catch an error that looks like success?",
+    "「成功に見える誤り」を、あなたの確認方法で見つけられますか？"
+  ],
+  [
+    "本地与云端改变数据流向、资源需求和维护方式。先明确任务与资料边界，再判断环境是否合适。",
+    "Local and cloud setups change data flows, resource needs and maintenance. Define the task and data boundaries before choosing an environment.",
+    "ローカルとクラウドでは、データの流れ、必要なリソース、保守方法が変わります。タスクと資料の利用範囲を明確にしてから環境を判断します。"
+  ],
+  [
+    "如果断网或资源不足，哪些功能仍需工作？",
+    "What must still work when connectivity or resources fail?",
+    "通信が切れたりリソースが不足したりしても、動く必要がある機能は何ですか？"
+  ],
+  [
+    "版本记录回答“交付了哪一份”；许可回答“允许怎样使用和分发”。能下载，不代表任何用途都被允许。",
+    "Version records identify what was delivered. Licenses specify permitted use and distribution. Being downloadable does not mean every use is allowed.",
+    "版の記録は「何を納品したか」を示し、ライセンスは「どう利用・配布できるか」を定めます。ダウンロードできることと、自由に使えることは同じではありません。"
+  ],
+  [
+    "另一位维护者能还原你的运行环境吗？",
+    "Could another maintainer reproduce your environment?",
+    "別の保守担当者が、実行環境を再現できますか？"
+  ],
+  [
+    "把源码检查、部署产物检查和运行检查分开。保留版本与恢复路径，才能把一次跑通变成可维护的交付。",
+    "Check source code, deployment artifacts and runtime behavior separately. Keep version records and a recovery path to turn a working demo into a maintainable delivery.",
+    "ソース、配布する成果物、実行時の動作をそれぞれ確認します。版と復旧手順を残すことで、一度動いただけのものを保守可能な成果物にできます。"
+  ],
+  [
+    "更新失败时，如何回到上一份可用状态？",
+    "How would you restore the last working version after a failed update?",
+    "更新に失敗したとき、前の正常な状態にどう戻しますか？"
+  ],
+  [
+    "先分清发布方说了什么、展示了什么、还有什么未验证。再回到原理与应用，判断这条消息改变了什么。",
+    "Separate what the publisher claims, what it demonstrates and what remains unverified. Return to principles and use cases to judge what has changed.",
+    "発表者の主張、実演されたこと、未検証のことを分けます。そのうえで原理と用途に戻り、何が変わったのかを考えます。"
+  ],
+  [
+    "它改变了事实，还是只改变了你的期待？",
+    "Has it changed the facts, or only your expectations?",
+    "変わったのは事実ですか、それとも自分の期待だけでしょうか？"
+  ],
+  [
+    "一个链接只是入口。读任务设置、对照方法和限制，也找可能推翻当前解释的证据。",
+    "A link is only an entry point. Read the task setup, comparisons and limitations, and look for evidence that could challenge the current explanation.",
+    "リンクは入口にすぎません。タスクの設定、比較方法、限界を読み、今の解釈を覆す可能性のある根拠も探します。"
+  ],
+  [
+    "换一组任务或人群，结论还成立吗？",
+    "Would the conclusion hold for different tasks or people?",
+    "タスクや対象者が変わっても、その結論は成り立ちますか？"
+  ],
+  [
+    "节省下来的时间、被重新分配的机会和需要承担的责任，属于同一个故事。技术问题会继续变成人的选择。",
+    "Saved time, redistributed opportunities and responsibility belong to the same story. Technical questions continue to become human choices.",
+    "生まれた時間、配分が変わる機会、引き受ける責任は、一つにつながっています。技術の問いは、これからも人の選択につながっていきます。"
+  ],
+  [
+    "能力足够之后，你想把生活带向哪里？",
+    "Once capabilities are sufficient, where would you like life to go?",
+    "能力が十分になった先で、暮らしをどこへ向けたいですか？"
+  ],
+  ["结语：回到最初的问题。", "Closing: return to the first question.", "結び：最初の問いに戻る。"],
+  ["结语 / 回到最初的问题", "CLOSING / RETURN TO THE FIRST QUESTION", "結び / 最初の問いに戻る"],
+  ["能力的故事，", "The story of capability", "能力の物語を、"],
+  ["还要由我们继续写。", "is still ours to write.", "これからも私たちが紡いでいく。"],
+  [
+    "我们为什么需要机器的能力？最初，是为了少一点重复、跨过一些限制，也为了看见原本看不到的可能。",
+    "Why do we need machines to gain capabilities? We began with a wish to reduce repetition, overcome limitations and see possibilities we could not see before.",
+    "なぜ機械の能力が必要なのでしょうか。繰り返しを減らし、制約を越え、それまで見えなかった可能性を見つけたい。その願いから始まりました。"
+  ],
+  ["当下", "The present", "いま"],
+  [
+    "能力不是凭空出现的",
+    "Capability does not appear from nowhere",
+    "能力は突然生まれるものではない"
+  ],
+  [
+    "从一个研究猜想，到样本、计算与模型，一次次尝试把问题变成了可以检验的事。",
+    "From a research conjecture to examples, computation and models, repeated attempts turned questions into things we could test.",
+    "研究の仮説から、サンプル、計算、モデルへ。試行の積み重ねが、問いを検証できるものに変えてきました。"
+  ],
+  [
+    "会做，并不等于值得托付",
+    "Ability alone does not establish trust",
+    "できることと、任せられること"
+  ],
+  [
+    "回答需要证据，行动需要边界。我们既能设计助手，也要决定怎样检查、何时接手。",
+    "Answers need evidence and actions need boundaries. We can design assistants, and decide how to check them and when to take over.",
+    "回答には根拠が、行動には境界が必要です。助手を設計すると同時に、どう確認し、いつ人が引き継ぐかも考えます。"
+  ],
+  [
+    "更强之后，想走向哪里？",
+    "Where do we want greater capability to lead?",
+    "能力が高まった先で、どこへ向かう？"
+  ],
+  [
+    "如果时间与物质更充裕，什么值得我们继续追求？不同的愿望如何一起生活？",
+    "If time and material resources become more abundant, what is worth pursuing? How can different aspirations coexist?",
+    "時間や物質がより豊かになったら、何を求め続けたいでしょうか。異なる願いは、どう共に生きられるでしょうか。"
+  ],
+  [
+    "这座馆暂时停在这里。关于人、技术与文明的讨论，仍然向每个人敞开。",
+    "The exhibition pauses here. The conversation about people, technology and civilization remains open to everyone.",
+    "展示はここで一区切りです。人、技術、文明についての対話は、これからもすべての人に開かれています。"
+  ],
+  ["下一页：带走你的问题 →", "Next: take your question with you →", "次へ：問いを持ち帰る →"],
+  ["看分界", "See the boundary", "分界を見る"],
+  ["核对结果", "Check the results", "結果を確認"],
+  [
+    "训练全对，就不会判断错吗？",
+    "Does perfect training accuracy prevent mistakes?",
+    "学習で全問正解なら、判断を誤らない？"
+  ],
+  ["未来", "The future", "これから"],
+  ["试运行", "Trial run", "試運転"],
+  ["能力", "Capability", "能力"],
+  ["选择", "Choice", "選択"]
+]

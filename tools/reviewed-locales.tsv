@@ -1,0 +1,140 @@
+English	de	fr	ko	ru
+Zhixu	Zhixu	Zhixu	즈쉬	Чжисюй
+Museum	Museum	Musée	과학관	Музей
+Exhibition guide	Rundgang	Parcours	전시 안내	Путеводитель
+Foundations	Grundlagen	Les bases	기초 지식	Основы
+Research room	Wissensraum	Centre de ressources	자료실	Библиотека
+AI News	KI-Nachrichten	Actualités IA	AI 뉴스	Новости ИИ
+My notes	Meine Notizen	Mes notes	나의 노트	Мои заметки
+Main navigation	Hauptnavigation	Navigation principale	주 메뉴	Главное меню
+Open guide	Rundgang öffnen	Ouvrir le parcours	전시 안내 열기	Открыть путеводитель
+Origins	Ursprung	Origines	시작	Истоки
+Understanding	Verstehen	Comprendre	이해	Понимание
+Encounters	Begegnungen	Rencontres	만남	Встречи
+Action	Handeln	Agir	행동	Действие
+Creation	Gestalten	Créer	창작	Создание
+Coexistence	Zusammenleben	Coexister	공존	Сосуществование
+Where does it come from?	Woher kommt KI?	D’où vient l’IA ?	AI는 어디에서 왔을까?	Откуда появился ИИ?
+How does it answer?	Wie entstehen Antworten?	Comment répond-elle ?	어떻게 답을 만들까?	Как ИИ формирует ответ?
+What can we entrust to it?	Was können wir KI anvertrauen?	Que peut-on lui confier ?	어떤 일을 맡길 수 있을까?	Что можно доверить ИИ?
+From answers to action	Von Antworten zum Handeln	Des réponses à l’action	답변에서 행동으로	От ответов к действиям
+Design your assistant	Den eigenen Assistenten gestalten	Concevez votre assistant	나만의 도우미 설계하기	Создайте своего помощника
+Where are we heading?	Wohin führt der Weg?	Vers quoi allons-nous ?	우리는 어디로 갈까?	Куда мы идём?
+Why do we	Warum brauchen wir	Pourquoi donner	우리는 왜	Зачем нам
+need machines	Maschinen mit	aux machines	기계의	способности
+to be capable?	Fähigkeiten?	des capacités ?	능력이 필요할까?	машин?
+Capability and Choice	Fähigkeit und Entscheidung	Capacités et choix	능력과 선택	Возможности и выбор
+Capability	Fähigkeit	Capacité	능력	Возможности
+Choice	Entscheidung	Choix	선택	Выбор
+Start with human needs	Mit menschlichen Bedürfnissen beginnen	Partir des besoins humains	사람의 필요에서 시작하기	Начать с потребностей человека
+Choose your starting point	Einstieg wählen	Choisir votre point de départ	출발점 선택하기	Выбрать отправную точку
+Pause animation	Animation pausieren	Mettre l’animation en pause	애니메이션 일시 정지	Приостановить анимацию
+Next	Weiter	Suivant	다음	Далее
+Previous	Zurück	Précédent	이전	Назад
+Sources	Quellen	Sources	출처	Источники
+Source	Quelle	Source	출처	Источник
+Original sources	Originalquellen	Sources originales	원문 자료	Первоисточники
+Original Transformer paper	Transformer: Originalarbeit	Article original sur le Transformer	Transformer 원논문	Исходная статья о Transformer
+Chinese original	Chinesischer Originaltext	Texte original en chinois	중국어 원문	Оригинал на китайском
+Artificial intelligence	Künstliche Intelligenz	Intelligence artificielle	인공지능	Искусственный интеллект
+Machine learning	Maschinelles Lernen	Apprentissage automatique	기계 학습	Машинное обучение
+Learning and training	Lernen und Training	Apprentissage et entraînement	학습과 훈련	Обучение и тренировка
+Learning	Lernen	Apprentissage	학습	Обучение
+Parameters and quantization	Parameter und Quantisierung	Paramètres et quantification	매개변수와 양자화	Параметры и квантование
+Context	Kontext	Contexte	문맥	Контекст
+Prompts and context	Prompts und Kontext	Consignes et contexte	프롬프트와 문맥	Промпты и контекст
+Models and context	Modelle und Kontext	Modèles et contexte	모델과 문맥	Модели и контекст
+Agents	KI-Agenten	Agents IA	AI 에이전트	ИИ-агенты
+Agents: from answers to action	KI-Agenten: von Antworten zum Handeln	Agents : des réponses à l’action	에이전트: 답변에서 행동으로	Агенты: от ответов к действиям
+Knowledge bases and retrieval	Wissensbasen und Suche	Bases de connaissances et recherche	지식 기반과 검색	Базы знаний и поиск
+Input and learning	Eingabe und Lernen	Entrées et apprentissage	입력과 학습	Ввод и обучение
+Give it capabilities. Give it boundaries.	Fähigkeiten ermöglichen. Grenzen festlegen.	Donnez-lui des capacités. Fixez des limites.	능력을 주고, 경계도 정하세요.	Дайте возможности. Установите границы.
+Give it capabilities—and boundaries.	Fähigkeiten ermöglichen und Grenzen festlegen.	Donnez-lui des capacités et des limites.	능력과 함께 경계도 정하세요.	Дайте возможности и установите границы.
+Reset	Zurücksetzen	Réinitialiser	초기화	Сбросить
+Restart	Neu starten	Recommencer	다시 시작	Начать заново
+Resume	Fortsetzen	Reprendre	이어서 진행	Продолжить
+Save checkpoint	Zwischenstand speichern	Enregistrer un point de reprise	진행 상태 저장	Сохранить контрольную точку
+Approve saving this draft	Speichern dieses Entwurfs erlauben	Autoriser l’enregistrement du brouillon	이 초안 저장 승인	Разрешить сохранение черновика
+Run next step	Nächsten Schritt ausführen	Exécuter l’étape suivante	다음 단계 실행	Выполнить следующий шаг
+Start trial	Probelauf starten	Lancer l’essai	시험 실행 시작	Начать пробный запуск
+Save artifact	Ergebnis speichern	Enregistrer le résultat	결과물 저장	Сохранить результат
+Export notes	Notizen exportieren	Exporter les notes	노트 내보내기	Экспорт заметок
+Save this question	Diese Frage speichern	Enregistrer cette question	이 질문 저장	Сохранить вопрос
+Allow reading teaching sources	Lesen der Lehrmaterialien erlauben	Autoriser la lecture des supports pédagogiques	학습용 자료 읽기 허용	Разрешить чтение учебных материалов
+Allow saving a teaching draft	Speichern eines Übungsentwurfs erlauben	Autoriser l’enregistrement d’un brouillon d’exercice	학습용 초안 저장 허용	Разрешить сохранение учебного черновика
+Allow checkpoints	Zwischenstände erlauben	Autoriser les points de reprise	진행 상태 저장 허용	Разрешить контрольные точки
+Permissions and budget	Berechtigungen und Budget	Autorisations et budget	권한과 예산	Разрешения и бюджет
+Human confirmation	Menschliche Bestätigung	Validation humaine	사람의 확인	Подтверждение человеком
+Machine prediction	Vorhersage des Modells	Prédiction du modèle	모델의 예측	Прогноз модели
+Training errors	Trainingsfehler	Erreurs d’entraînement	훈련 오류	Ошибки на обучающих данных
+Model threshold	Modellschwelle	Seuil du modèle	모델의 임계값	Порог модели
+Inspection standard	Prüfstandard	Norme de contrôle	검사 기준	Стандарт проверки
+Add boundary samples and retrain	Grenznahe Beispiele ergänzen und neu trainieren	Ajouter des exemples près du seuil et réentraîner	경계 부근의 표본을 추가하고 다시 학습	Добавить примеры у границы и обучить заново
+Find boundary automatically	Grenze automatisch bestimmen	Déterminer le seuil automatiquement	경계 자동 찾기	Найти границу автоматически
+See the boundary	Grenze ansehen	Voir le seuil	경계 보기	Посмотреть границу
+Check the results	Ergebnisse prüfen	Vérifier les résultats	결과 확인	Проверить результаты
+③ Distinguish memory	③ Speicherarten unterscheiden	③ Distinguer les types de mémoire	③ 기억의 종류 구분	③ Различить виды памяти
+One token is not necessarily one character	Ein Token ist nicht unbedingt ein Zeichen	Un token n’est pas forcément un caractère	토큰 하나가 반드시 글자 하나는 아닙니다	Один токен — не обязательно один символ
+Why isn't a token simply a character?	Warum ist ein Token nicht einfach ein Zeichen?	Pourquoi un token n’est-il pas un simple caractère ?	토큰은 왜 글자 하나와 다를까요?	Почему токен — не просто символ?
+How do next-token predictions become a long answer?	Wie entsteht aus der Vorhersage einzelner Tokens eine lange Antwort?	Comment prédire le token suivant produit-il une longue réponse ?	다음 토큰 예측이 어떻게 긴 답변이 될까요?	Как предсказание следующего токена превращается в длинный ответ?
+Back to entrance	Zurück zum Eingang	Retour à l’entrée	입구로 돌아가기	Вернуться ко входу
+Back to gallery	Zurück zur Ausstellung	Retour à l’exposition	전시로 돌아가기	Вернуться в экспозицию
+Close reading panel	Lesefenster schließen	Fermer le panneau de lecture	읽기 창 닫기	Закрыть панель чтения
+Close guide	Rundgang schließen	Fermer le parcours	전시 안내 닫기	Закрыть путеводитель
+Back to exhibition	Zurück zur Ausstellung	Retour à l’exposition	전시로 돌아가기	Вернуться в экспозицию
+The present	Gegenwart	Le présent	현재	Настоящее
+The future	Zukunft	L’avenir	미래	Будущее
+Closing: return to the first question.	Zum Abschluss: zurück zur ersten Frage.	Pour conclure : revenir à la première question.	맺음말: 첫 질문으로 돌아가다.	Заключение: вернёмся к первому вопросу.
+CLOSING / RETURN TO THE FIRST QUESTION	ZUM ABSCHLUSS / DIE ERSTE FRAGE	CONCLUSION / LA PREMIÈRE QUESTION	맺음말 / 첫 질문으로 돌아가다	ЗАКЛЮЧЕНИЕ / ПЕРВЫЙ ВОПРОС
+The story of capability	Die Geschichte unserer Möglichkeiten	L’histoire de nos capacités	능력의 이야기는	Историю возможностей
+is still ours to write.	schreiben wir weiter.	reste à écrire, ensemble.	여전히 우리가 써 내려갑니다.	по-прежнему пишем мы.
+Capability does not appear from nowhere	Fähigkeiten entstehen nicht aus dem Nichts	Les capacités ne naissent pas de rien	능력은 갑자기 생기지 않습니다	Возможности не возникают из ничего
+Ability alone does not establish trust	Können allein schafft kein Vertrauen	La capacité seule ne suffit pas à créer la confiance	능력만으로 신뢰가 생기지는 않습니다	Одних способностей недостаточно для доверия
+Where do we want greater capability to lead?	Wohin sollen größere Fähigkeiten führen?	Vers quoi voulons-nous orienter ces capacités ?	더 큰 능력으로 어디를 향하고 싶나요?	Куда мы хотим направить новые возможности?
+Next: take your question with you →	Weiter: die eigene Frage mitnehmen →	Suite : emportez votre question →	다음: 나의 질문 가져가기 →	Далее: возьмите свой вопрос с собой →
+Decline	Ablehnen	Refuser	거절	Отказать
+You declined saving. Task stopped; no artifact written.	Speichern abgelehnt. Aufgabe angehalten; kein Ergebnis gespeichert.	Enregistrement refusé. La tâche s’est arrêtée ; aucun résultat n’a été enregistré.	저장을 거절했습니다. 작업이 중단되었으며 결과물은 저장되지 않았습니다.	Вы отказали в сохранении. Задача остановлена, результат не записан.
+No relevant evidence. The trial will stop rather than invent facts.	Keine passenden Belege. Der Probelauf stoppt, ohne Fakten zu erfinden.	Aucune preuve pertinente. L’essai s’arrête sans inventer de faits.	관련 근거가 없습니다. 사실을 지어내지 않고 시험 실행을 중단합니다.	Нет подходящих доказательств. Пробный запуск остановится, не выдумывая факты.
+No relevant sources. The trial will stop rather than invent facts.	Keine passenden Quellen. Der Probelauf stoppt, ohne Fakten zu erfinden.	Aucune source pertinente. L’essai s’arrête sans inventer de faits.	관련 자료가 없습니다. 사실을 지어내지 않고 시험 실행을 중단합니다.	Нет подходящих источников. Пробный запуск остановится, не выдумывая факты.
+Approved saving this draft only, without sending it externally.	Nur das Speichern dieses Entwurfs ist erlaubt, kein externer Versand.	Seul l’enregistrement de ce brouillon est autorisé, sans envoi externe.	이 초안의 저장만 승인했습니다. 외부로 전송하지 않습니다.	Разрешено только сохранение этого черновика, без внешней отправки.
+Teaching step budget exhausted. Execution stopped.	Schrittbudget der Übung aufgebraucht. Ausführung angehalten.	Le nombre d’étapes autorisées est épuisé. Exécution arrêtée.	학습용 실행 단계 한도에 도달했습니다. 실행을 중단했습니다.	Лимит шагов учебного задания исчерпан. Выполнение остановлено.
+Stopped at a read-only draft. No artifact saved.	Bei einem schreibgeschützten Entwurf angehalten. Kein Ergebnis gespeichert.	Arrêt sur un brouillon en lecture seule. Aucun résultat enregistré.	읽기 전용 초안 단계에서 멈췄습니다. 결과물은 저장되지 않았습니다.	Остановка на черновике только для чтения. Результат не сохранён.
+Disconnect one path and see where the process stops.	Eine Verbindung trennen und beobachten, wo der Ablauf stoppt.	Coupez une liaison et observez où le processus s’arrête.	연결 하나를 끊고 과정이 어디에서 멈추는지 보세요.	Разорвите одну связь и посмотрите, где остановится процесс.
+Keep tasks resumable—and stoppable.	Aufgaben müssen fortsetzbar und anhaltbar bleiben.	Les tâches doivent pouvoir reprendre et s’arrêter.	작업은 이어서 실행할 수도, 멈출 수도 있어야 합니다.	Задачи должны допускать продолжение и остановку.
+Harness: keep work resumable and stoppable	Harness: Arbeit fortsetzen und anhalten können	Harness : permettre la reprise et l’arrêt	Harness: 작업을 이어 가고 멈출 수 있게 하기	Harness: возможность продолжить и остановить работу
+Review can stop permanently	Die Prüfung kann dauerhaft angehalten bleiben	La vérification peut rester arrêtée	검토를 중단한 상태로 둘 수도 있습니다	Проверка может остаться остановленной
+Assembly stops; sources are not silently cut.	Die Zusammenstellung stoppt; Quellen werden nicht unbemerkt gekürzt.	L’assemblage s’arrête ; les sources ne sont pas tronquées sans indication.	구성을 중단합니다. 자료를 알리지 않고 잘라 내지 않습니다.	Сборка прекращается; источники не обрезаются незаметно.
+Budgets, timeouts and retries: stopping rules	Budgets, Zeitlimits und Wiederholungen: Stoppregeln	Budgets, délais et nouvelles tentatives : règles d’arrêt	예산, 시간 제한, 재시도: 중단 규칙	Бюджеты, тайм-ауты и повторные попытки: правила остановки
+Why do we need machines to gain capabilities? We began with a wish to reduce repetition, overcome limitations and see possibilities we could not see before.	Warum sollen Maschinen Fähigkeiten erwerben? Am Anfang stand der Wunsch, Wiederholungen zu reduzieren, Grenzen zu überwinden und neue Möglichkeiten zu erkennen.	Pourquoi donner des capacités aux machines ? Au départ, nous voulions réduire les tâches répétitives, dépasser certaines limites et découvrir de nouvelles possibilités.	우리는 왜 기계에 능력이 필요하다고 생각했을까요? 반복을 줄이고 한계를 넘으며, 전에는 보이지 않던 가능성을 찾고 싶었기 때문입니다.	Зачем мы наделяем машины способностями? Сначала мы хотели сократить рутину, преодолеть ограничения и увидеть новые возможности.
+From a research conjecture to examples, computation and models, repeated attempts turned questions into things we could test.	Von einer Forschungsidee über Beispiele und Berechnungen bis zu Modellen: Wiederholte Versuche machten Fragen überprüfbar.	D’une hypothèse de recherche aux exemples, aux calculs et aux modèles, les essais successifs ont rendu nos questions vérifiables.	연구의 가설에서 표본, 계산, 모델에 이르기까지, 거듭된 시도는 질문을 검증할 수 있는 대상으로 바꾸었습니다.	От научной гипотезы к примерам, вычислениям и моделям — повторные попытки сделали вопросы проверяемыми.
+Answers need evidence and actions need boundaries. We can design assistants, and decide how to check them and when to take over.	Antworten brauchen Belege, Handlungen brauchen Grenzen. Wir können Assistenten gestalten und entscheiden, wie wir sie prüfen und wann wir selbst übernehmen.	Les réponses demandent des preuves, les actions des limites. Nous pouvons concevoir des assistants et décider comment les vérifier et quand reprendre la main.	답변에는 근거가, 행동에는 경계가 필요합니다. 우리는 도우미를 설계하고, 어떻게 검증하며 언제 직접 맡을지 결정할 수 있습니다.	Ответам нужны доказательства, действиям — границы. Мы можем создавать помощников и решать, как их проверять и когда брать управление на себя.
+If time and material resources become more abundant, what is worth pursuing? How can different aspirations coexist?	Wenn Zeit und materielle Mittel reichlicher vorhanden sind: Was lohnt sich dann anzustreben? Wie können unterschiedliche Wünsche nebeneinander bestehen?	Si le temps et les ressources matérielles deviennent plus abondants, que vaudra-t-il la peine de poursuivre ? Comment faire coexister des aspirations différentes ?	시간과 물질이 더 풍요로워진다면 무엇을 추구할까요? 서로 다른 바람은 어떻게 함께할 수 있을까요?	Если времени и материальных ресурсов станет больше, к чему стоит стремиться? Как могут сосуществовать разные желания?
+The exhibition pauses here. The conversation about people, technology and civilization remains open to everyone.	Hier endet der Rundgang vorerst. Das Gespräch über Menschen, Technik und Zivilisation steht allen weiterhin offen.	L’exposition s’arrête ici pour un temps. La conversation sur l’humain, la technologie et la civilisation reste ouverte à tous.	전시는 여기서 잠시 멈춥니다. 사람, 기술, 문명에 관한 대화는 모두에게 열려 있습니다.	Здесь экспозиция делает паузу. Разговор о людях, технологиях и цивилизации остаётся открытым для всех.
+Compute	Rechenleistung	Puissance de calcul	연산 능력	Вычислительные ресурсы
+Compute and CUDA	Rechenleistung und CUDA	Puissance de calcul et CUDA	연산 능력과 CUDA	Вычислительные ресурсы и CUDA
+Parameter	Parameter	Paramètre	매개변수	Параметр
+Attention: how information connects	Attention: Informationen verknüpfen	Attention : relier les informations	어텐션: 정보를 연결하는 방법	Механизм внимания: связи между данными
+Attention / how information combines	Attention / Informationen kombinieren	Attention / combiner les informations	어텐션 / 정보를 결합하는 방법	Механизм внимания / объединение данных
+Training: patterns from examples	Training: Muster aus Beispielen lernen	Entraînement : apprendre à partir d’exemples	훈련: 예시에서 규칙 찾기	Обучение: закономерности из примеров
+Calculate a tiny attention example	Ein kleines Attention-Beispiel berechnen	Calculer un petit exemple d’attention	간단한 어텐션 예제 계산하기	Рассчитать простой пример механизма внимания
+Harness series	Harness: die Reihe	Série sur le Harness	Harness 시리즈	Серия о Harness
+Explore harnesses	Harness erkunden	Explorer les Harness	Harness 알아보기	Изучить Harness
+How a harness works	Wie ein Harness funktioniert	Comment fonctionne un Harness	Harness의 작동 방식	Как работает Harness
+Read denied	Lesen nicht erlaubt	Lecture interdite	읽기 권한 없음	Чтение запрещено
+Saving denied	Speichern nicht erlaubt	Enregistrement interdit	저장 권한 없음	Сохранение запрещено
+Read allowed	Lesen erlaubt	Lecture autorisée	읽기 허용	Чтение разрешено
+Draft saving allowed	Entwurf darf gespeichert werden	Enregistrement du brouillon autorisé	초안 저장 허용	Сохранение черновика разрешено
+Training errors (lower is better)	Trainingsfehler (weniger ist besser)	Erreurs d’entraînement (moins, c’est mieux)	훈련 오류 수 (적을수록 좋음)	Ошибки обучения (меньше — лучше)
+CPU {2} ticks; GPU path {3} ticks	CPU: {2} Takte; GPU-Pfad: {3} Takte	CPU : {2} unités de temps ; parcours GPU : {3}	CPU {2} 시간 단위; GPU 경로 {3} 시간 단위	CPU: {2} тактов; путь GPU: {3} тактов
+■ GPU compute {12}	■ GPU-Berechnung {12}	■ Calcul GPU {12}	■ GPU 연산 {12}	■ Вычисления GPU {12}
+Tokenization / Hugging Face	Tokenisierung / Hugging Face	Tokenisation / Hugging Face	토큰화 / Hugging Face	Токенизация / Hugging Face
+Attention Is All You Need / original paper	Attention Is All You Need / Originalarbeit	Attention Is All You Need / article original	Attention Is All You Need / 원논문	Attention Is All You Need / исходная статья
+Asking a question usually is not retraining	Eine Frage verändert normalerweise nicht das Training	Poser une question ne réentraîne généralement pas le modèle	질문을 한다고 모델이 다시 훈련되는 것은 아닙니다	Вопрос обычно не переобучает модель
+① What parameters do	① Was Parameter bewirken	① Le rôle des paramètres	① 매개변수의 역할	① Роль параметров
+First compute match scores	Zuerst die Übereinstimmung berechnen	Calculer d’abord les scores de correspondance	먼저 일치도 점수를 계산합니다	Сначала рассчитать оценки соответствия
+Attention is only one step.	Attention ist nur ein Schritt.	L’attention n’est qu’une étape.	어텐션은 전체 과정의 한 단계입니다.	Механизм внимания — лишь один шаг.
+Attention + other operations	Attention + weitere Operationen	Attention + autres opérations	어텐션 + 다른 연산	Механизм внимания + другие операции
+Harness: the runtime beyond the model	Harness: Laufzeitumgebung um das Modell	Harness : l’environnement d’exécution autour du modèle	Harness: 모델을 둘러싼 실행 환경	Harness: среда выполнения вокруг модели
+From teaching harness to production	Vom Übungs-Harness zum Produktivsystem	Du Harness pédagogique au système en production	학습용 Harness에서 실제 운영으로	От учебного Harness к рабочей системе
+Transformer: vectors to the next token	Transformer: von Vektoren zum nächsten Token	Transformer : des vecteurs au token suivant	Transformer: 벡터에서 다음 토큰으로	Transformer: от векторов к следующему токену
+Anthropic · harnesses for long tasks	Anthropic · Harness für lange Aufgaben	Anthropic · Harness pour les tâches longues	Anthropic · 장기 작업을 위한 Harness	Anthropic · Harness для длительных задач

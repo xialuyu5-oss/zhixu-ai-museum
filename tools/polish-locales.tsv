@@ -1,0 +1,50 @@
+一次次尝试，让经验留下来	Each attempt leaves experience to build on	試みを重ね、経験を次につなぐ	시도를 거듭하며 경험을 쌓기	Aus jedem Versuch Erfahrung gewinnen	Chaque essai nourrit l’expérience	Каждая попытка оставляет опыт
+三路条件，共同支持一次识别	Three inputs support one recognition task	三つの条件がそろって、認識を支える	세 가지 조건이 하나의 인식을 뒷받침합니다	Drei Voraussetzungen für eine Erkennung	Trois conditions pour une reconnaissance	Три условия для одного распознавания
+外语原文	Original foreign-language text	外国語の原文	외국어 원문	Fremdsprachiger Originaltext	Texte original en langue étrangère	Оригинал на иностранном языке
+解释与对照	Explain and compare	説明と照合	설명과 대조	Erklären und vergleichen	Expliquer et comparer	Объяснение и сравнение
+核对术语和数字	Check terms and figures	用語と数値を確認	용어와 수치 확인	Begriffe und Zahlen prüfen	Vérifier termes et chiffres	Проверка терминов и чисел
+候选原因	Possible causes	原因の候補	가능한 원인	Mögliche Ursachen	Causes possibles	Возможные причины
+设计验证试验	Design a verification test	検証方法を考える	검증 실험 설계	Einen Prüftest entwerfen	Concevoir un test de vérification	Разработать проверочный тест
+帮我做个分享。	Make a presentation for me.	発表資料を作って。	발표 자료를 만들어 줘.	Mach mir eine Präsentation.	Fais-moi une présentation.	Сделай мне презентацию.
+帮我看看设备哪里坏了。	Find what is wrong with the device.	装置のどこが壊れたか見て。	장비가 어디 고장 났는지 봐 줘.	Schau, was am Gerät kaputt ist.	Regarde ce qui ne va pas avec l’appareil.	Посмотри, что сломалось в устройстве.
+帮我安排出去玩。	Plan an outing for me.	お出かけの予定を立てて。	나들이 일정을 짜 줘.	Plane einen Ausflug für mich.	Organise-moi une sortie.	Спланируй мне поездку.
+把这道题做了。	Solve this problem.	この問題を解いて。	이 문제를 풀어 줘.	Löse diese Aufgabe.	Résous ce problème.	Реши эту задачу.
+不够明确	Too vague	あいまいな依頼	모호한 요청	Zu unklar	Trop vague	Слишком расплывчато
+更清楚的任务	A clearer task	具体的な依頼	더 명확한 작업	Eine klarere Aufgabe	Une tâche plus précise	Более чёткая задача
+对比示例	Compare examples	例を比べる	예시 비교	Beispiele vergleichen	Comparer les exemples	Сравнить примеры
+修改我的任务	Edit my task	自分の依頼を編集	내 작업 수정	Meine Aufgabe bearbeiten	Modifier ma tâche	Изменить мою задачу
+说清对象、任务和验收条件，助手才知道做到哪里。	Specify the audience, task and acceptance criteria so the assistant knows what completion means.	対象、作業、完了条件を伝えると、どこまで行えばよいかが明確になります。	대상, 작업, 완료 기준을 명시해야 도우미가 어디까지 해야 할지 알 수 있습니다.	Zielgruppe, Aufgabe und Abnahmekriterien machen klar, wann die Arbeit erledigt ist.	Précisez le public, la tâche et les critères de réussite pour définir ce que signifie « terminé ».	Укажите аудиторию, задачу и критерии приёмки, чтобы помощник понимал, когда работа завершена.
+等待开始	Ready to start	開始待ち	시작 대기	Bereit zum Start	Prêt à démarrer	Готово к запуску
+检查权限并开始	Check permissions and start	権限を確認して開始	권한 확인 후 시작	Berechtigungen prüfen und starten	Vérifier les droits et démarrer	Проверить права и начать
+准备读取资料	Ready to read materials	資料の読み取り待ち	자료 읽기 준비	Bereit zum Lesen	Prêt à lire les documents	Готово к чтению материалов
+读取资料	Read materials	資料を読む	자료 읽기	Material lesen	Lire les documents	Прочитать материалы
+准备起草	Ready to draft	下書き作成待ち	초안 작성 준비	Bereit für den Entwurf	Prêt à rédiger	Готово к подготовке черновика
+生成草稿	Create draft	下書きを作成	초안 생성	Entwurf erstellen	Créer le brouillon	Создать черновик
+等待你的确认	Awaiting your approval	あなたの承認待ち	사용자 승인 대기	Wartet auf Ihre Freigabe	En attente de votre accord	Ожидается ваше одобрение
+准备保存	Ready to save	保存待ち	저장 준비	Bereit zum Speichern	Prêt à enregistrer	Готово к сохранению
+保存草稿	Save draft	下書きを保存	초안 저장	Entwurf speichern	Enregistrer le brouillon	Сохранить черновик
+准备验收	Ready to verify	検証待ち	검증 준비	Bereit zur Prüfung	Prêt à vérifier	Готово к проверке
+检查产物	Check the artifact	成果物を確認	결과물 확인	Ergebnis prüfen	Vérifier le résultat	Проверить результат
+任务完成	Task completed	作業完了	작업 완료	Aufgabe abgeschlossen	Tâche terminée	Задача выполнена
+验收未通过	Verification failed	検証不合格	검증 실패	Prüfung fehlgeschlagen	Vérification échouée	Проверка не пройдена
+运行已停止	Execution stopped	実行停止	실행 중지	Ausführung beendet	Exécution arrêtée	Выполнение остановлено
+条件不满足	Requirements not met	条件を満たしていません	조건 미충족	Voraussetzungen nicht erfüllt	Conditions non remplies	Условия не выполнены
+已拒绝保存	Save declined	保存を拒否しました	저장 거부됨	Speichern abgelehnt	Enregistrement refusé	Сохранение отклонено
+尚未验证	Not yet verified	未検証	아직 검증되지 않음	Noch nicht geprüft	Pas encore vérifié	Ещё не проверено
+已暂停	Paused	一時停止中	일시 중지됨	Pausiert	En pause	Приостановлено
+检查权限	Check permissions	権限確認	권한 확인	Rechte prüfen	Vérifier les droits	Проверить права
+当前任务	Current task	今回の依頼	현재 작업	Aktuelle Aufgabe	Tâche actuelle	Текущая задача
+中断与恢复	Pause and resume	中断と再開	중단 및 재개	Pause und Fortsetzung	Pause et reprise	Пауза и возобновление
+执行过程	Execution	実行の流れ	실행 과정	Ablauf	Exécution	Ход выполнения
+查看草稿	View draft	下書きを見る	초안 보기	Entwurf ansehen	Voir le brouillon	Посмотреть черновик
+运行记录	Run history	実行記録	실행 기록	Ausführungsverlauf	Historique	Журнал выполнения
+每点一次，执行一个环节。这里会说明做了什么、结果如何；保存前需要你确认。	Each click runs one step. This panel shows what happened and the result. Saving requires your approval.	クリックするたびに一つの工程を実行します。行ったことと結果をここに表示し、保存前には確認を求めます。	클릭할 때마다 한 단계가 실행됩니다. 수행 내용과 결과가 여기에 표시되며 저장 전에 승인이 필요합니다.	Jeder Klick führt einen Schritt aus. Hier sehen Sie Aktion und Ergebnis. Vor dem Speichern ist Ihre Freigabe nötig.	Chaque clic exécute une étape. Ce panneau affiche l’action et son résultat. L’enregistrement nécessite votre accord.	Каждое нажатие выполняет один этап. Здесь показаны действие и результат. Перед сохранением требуется ваше одобрение.
+尚未保存	Not yet saved	未保存	아직 저장되지 않음	Noch nicht gespeichert	Pas encore enregistré	Ещё не сохранено
+生成草稿后，可以在这里查看内容。	The draft will appear here once created.	下書きができると、ここで内容を確認できます。	초안이 생성되면 여기에서 내용을 확인할 수 있습니다.	Nach der Erstellung erscheint der Entwurf hier.	Le brouillon apparaîtra ici une fois créé.	После создания черновика его можно посмотреть здесь.
+选择页面	Choose a page	ページを選ぶ	페이지 선택	Seite wählen	Choisir une page	Выбрать страницу
+做法对比	Compare approaches	進め方を比較	작업 방식 비교	Vorgehen vergleichen	Comparer les méthodes	Сравнить подходы
+协作过程	Working together	協力の流れ	협업 과정	Zusammenarbeit	Travail en commun	Совместная работа
+内容概览	Overview	内容の概要	내용 개요	Überblick	Vue d’ensemble	Обзор
+继续阅读	Read on	続きを読む	계속 읽기	Weiterlesen	Lire la suite	Читать далее
+查看结果	View results	結果を見る	결과 보기	Ergebnisse ansehen	Voir les résultats	Посмотреть результаты
+深入了解	Explore further	詳しく知る	더 알아보기	Mehr erfahren	Approfondir	Узнать больше

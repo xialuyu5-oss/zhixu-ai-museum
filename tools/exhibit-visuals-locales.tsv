@@ -1,0 +1,41 @@
+从原始材料、机器整理到人工核对的协作场景	Raw material, machine organization and human review	資料の収集、機械による整理、人による確認	자료 수집, 기계 정리, 사람의 검토	Vom Rohmaterial über maschinelle Ordnung zur menschlichen Prüfung	Des matériaux bruts au classement automatique puis à la vérification humaine	От исходных материалов к машинной обработке и проверке человеком
+收集材料	Gather material	資料を集める	자료 수집	Material sammeln	Rassembler	Сбор материалов
+连接结构	Connection map	接続構成	연결 구조	Verbindungsstruktur	Structure de connexion	Схема подключения
+调用过程	Call sequence	呼び出しの流れ	호출 과정	Aufrufablauf	Déroulement de l’appel	Процесс вызова
+整理线索	Organize clues	手がかりを整理	단서 정리	Hinweise ordnen	Organiser les indices	Систематизация
+人工核对	Human review	人が確かめる	사람의 검토	Menschliche Prüfung	Vérification humaine	Проверка человеком
+AI 生成的概念插画	AI-generated conceptual illustration	AI 生成の概念イラスト	AI로 생성한 개념 삽화	KI-generierte Konzeptillustration	Illustration conceptuelle générée par IA	Концептуальная иллюстрация, созданная ИИ
+技术分享的想法	An idea for a technical talk	技術発表のアイデア	기술 발표 아이디어	Idee für einen Fachvortrag	Une idée de présentation technique	Идея технического доклада
+目标与验收条件	Goal and acceptance criteria	目標と完了条件	목표와 검수 기준	Ziel und Abnahmekriterien	Objectif et critères de validation	Цель и критерии приёмки
+带出处的候选资料	Candidate sources with references	出典付きの資料候補	출처가 있는 후보 자료	Quellenkandidaten mit Belegen	Documents candidats avec références	Материалы с указанием источников
+等待核对的提纲	An outline awaiting review	確認待ちの構成案	검토를 기다리는 개요	Gliederung zur Prüfung	Un plan à vérifier	План, ожидающий проверки
+本次保存的许可	Permission for this save	今回の保存への許可	이번 저장에 대한 허가	Erlaubnis für diesen Speichervorgang	Autorisation de cet enregistrement	Разрешение на это сохранение
+实际生成的文件	The file actually created	実際に作成されたファイル	실제로 생성된 파일	Die tatsächlich erstellte Datei	Le fichier effectivement créé	Фактически созданный файл
+通过或未通过的记录	A pass or fail record	合否の記録	통과 또는 실패 기록	Protokoll: bestanden oder nicht	Un résultat validé ou refusé	Запись об успешной или неуспешной проверке
+输入	Input	入力	입력	Eingabe	Entrée	Вход
+输出	Output	出力	출력	Ausgabe	Sortie	Выход
+文档 API	Documents API	文書 API	문서 API	Dokumenten-API	API de documents	API документов
+日历 API	Calendar API	カレンダー API	캘린더 API	Kalender-API	API de calendrier	API календаря
+AI 应用	AI application	AI アプリ	AI 앱	KI-Anwendung	Application d’IA	Приложение ИИ
+MCP 客户端	MCP client	MCP クライアント	MCP 클라이언트	MCP-Client	Client MCP	Клиент MCP
+统一的发现与调用	Standard discovery and calls	共通の発見・呼び出し	표준화된 검색과 호출	Einheitliche Suche und Aufrufe	Découverte et appels normalisés	Единое обнаружение и вызовы
+应用内的连接组件	Connection component inside the app	アプリ内の接続部品	앱 내부 연결 구성 요소	Verbindungskomponente in der App	Composant de connexion dans l’application	Компонент подключения внутри приложения
+MCP 服务端	MCP server	MCP サーバー	MCP 서버	MCP-Server	Serveur MCP	Сервер MCP
+封装与适配	Wrapping and adaptation	ラップと変換	래핑과 변환	Kapselung und Anpassung	Encapsulation et adaptation	Обёртка и адаптация
+文档专用适配	Document adapter	文書用アダプター	문서 전용 어댑터	Dokumentenadapter	Adaptateur de documents	Адаптер документов
+日历专用适配	Calendar adapter	カレンダー用アダプター	캘린더 전용 어댑터	Kalenderadapter	Adaptateur de calendrier	Адаптер календаря
+发现可用工具	Discover tools	利用可能なツールを探す	사용 가능한 도구 찾기	Werkzeuge entdecken	Découvrir les outils	Обнаружить инструменты
+按工具描述调用	Call by tool schema	ツールの定義に沿って呼ぶ	도구 명세에 따라 호출	Nach Werkzeugschema aufrufen	Appeler selon le schéma	Вызвать по описанию
+取得结构化结果	Receive a structured result	構造化された結果を受け取る	구조화된 결과 받기	Strukturiertes Ergebnis erhalten	Recevoir un résultat structuré	Получить структурированный результат
+查接口文档	Read API documentation	API の仕様を調べる	API 문서 확인	API-Dokumentation lesen	Lire la documentation API	Изучить документацию API
+分别组织请求	Build each request	リクエストを個別に組み立てる	각 요청 구성	Anfragen einzeln erstellen	Construire chaque requête	Составить каждый запрос
+处理返回结果	Handle each response	応答を処理する	응답 처리	Antworten verarbeiten	Traiter les réponses	Обработать ответы
+服务端返回工具名称、说明和参数结构。	The server returns tool names, descriptions and parameter schemas.	サーバーがツール名、説明、引数の構造を返します。	서버가 도구 이름, 설명, 매개변수 구조를 반환합니다.	Der Server liefert Werkzeugnamen, Beschreibungen und Parameterschemata.	Le serveur renvoie les noms, descriptions et schémas de paramètres des outils.	Сервер возвращает названия, описания и схемы параметров инструментов.
+客户端按约定发送工具名和参数，服务端处理具体接口。	The client sends a tool name and arguments; the server handles the underlying API.	クライアントがツール名と引数を送り、サーバーが個別の API を処理します。	클라이언트가 도구 이름과 인수를 보내면 서버가 실제 API를 처리합니다.	Der Client sendet Werkzeugname und Argumente; der Server bedient die konkrete API.	Le client envoie le nom et les arguments ; le serveur gère l’API sous-jacente.	Клиент отправляет имя инструмента и аргументы, а сервер обращается к нужному API.
+结果回到应用，仍需检查是否满足任务要求。	The result returns to the application and still needs checking against the task.	結果はアプリに戻ります。タスクの要件を満たすかの確認は必要です。	결과가 앱으로 돌아와도 작업 요구 사항을 충족하는지 확인해야 합니다.	Das Ergebnis geht an die Anwendung zurück und muss aufgabengerecht geprüft werden.	Le résultat revient à l’application ; il reste à vérifier s’il répond à la tâche.	Результат возвращается в приложение; его ещё нужно проверить на соответствие задаче.
+开发者分别了解两个接口的地址、参数和返回格式。	The developer learns the endpoint, parameters and response format of each API.	開発者が各 API のアドレス、引数、応答形式を確認します。	개발자가 각 API의 주소, 매개변수, 응답 형식을 확인합니다.	Entwickler prüfen Adresse, Parameter und Antwortformat jeder API.	Le développeur étudie l’adresse, les paramètres et le format de réponse de chaque API.	Разработчик изучает адрес, параметры и формат ответа каждого API.
+应用中的适配代码分别组装请求，并处理不同格式。	Adapter code in the application builds requests and handles the different formats.	アプリ内のアダプターがリクエストを組み立て、形式の違いを処理します。	앱의 어댑터 코드가 요청을 구성하고 서로 다른 형식을 처리합니다.	Adaptercode in der Anwendung erstellt Anfragen und verarbeitet verschiedene Formate.	Les adaptateurs de l’application construisent les requêtes et traitent les formats différents.	Код адаптеров в приложении формирует запросы и обрабатывает разные форматы.
+同样查询文档和日程，连接方式有什么不同？	Same documents and calendar. What changes in the connection?	同じ文書と予定を調べるとき、接続方法はどう変わる？	같은 문서와 일정을 조회할 때 연결 방식은 어떻게 다를까요?	Dieselben Dokumente und Termine: Was ändert sich bei der Anbindung?	Mêmes documents et agenda : qu’est-ce qui change dans la connexion ?	Те же документы и календарь: чем отличаются способы подключения?
+示例中，一个 MCP 服务端封装两项能力；接口适配仍然存在。	Here one MCP server wraps two capabilities; API adaptation still exists.	この例では、一つの MCP サーバーが二つの機能を提供します。API の変換処理は残ります。	이 예에서는 MCP 서버 하나가 두 기능을 감쌉니다. API 변환은 여전히 필요합니다.	Hier kapselt ein MCP-Server zwei Funktionen; die API-Anpassung bleibt nötig.	Ici, un serveur MCP expose deux capacités ; l’adaptation aux API reste nécessaire.	В примере один сервер MCP предоставляет две возможности; адаптация к API сохраняется.
+直接 API 也可以封装复用；这里展示逐项适配的常见做法。	Direct API integrations can also be reusable; this example shows separate adapters.	API の直接連携も共通化できます。ここでは個別に適応させる一般的な例を示します。	직접 API 연동도 재사용할 수 있습니다. 여기서는 개별 어댑터를 쓰는 일반적인 방식을 보여 줍니다.	Auch direkte API-Anbindungen sind wiederverwendbar; hier werden einzelne Adapter gezeigt.	Les intégrations directes peuvent aussi être réutilisables ; cet exemple utilise des adaptateurs distincts.	Прямую интеграцию с API тоже можно переиспользовать; здесь показаны отдельные адаптеры.
+两条路径都需要身份认证、授权与结果检查。	Both paths need authentication, authorization and result checks.	どちらも認証、認可、結果の確認が必要です。	두 방식 모두 인증, 권한 부여, 결과 확인이 필요합니다.	Beide Wege erfordern Authentifizierung, Autorisierung und Ergebnisprüfung.	Les deux voies exigent authentification, autorisation et vérification des résultats.	Оба пути требуют аутентификации, авторизации и проверки результатов.
