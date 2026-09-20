@@ -1,0 +1,73 @@
+{
+  "version": "0.15.0",
+  "time": "2026-09-19T00:56:43.516Z",
+  "total": 16,
+  "passed": 16,
+  "translatedKeys": 2371,
+  "checks": [
+    {
+      "name": "All eight catalogs have matching active keys and placeholder contracts",
+      "passed": true
+    },
+    {
+      "name": "Fresh and invalid storage default to Chinese",
+      "passed": true
+    },
+    {
+      "name": "Blocked local storage does not prevent switching",
+      "passed": true
+    },
+    {
+      "name": "Stored choice survives initialization and invalid choices are rejected",
+      "passed": true
+    },
+    {
+      "name": "Chinese whitespace and user text remain exact",
+      "passed": true
+    },
+    {
+      "name": "Known UI, accessible labels and computed text translate",
+      "passed": true
+    },
+    {
+      "name": "Full numeric messages translate before label fragments",
+      "passed": true
+    },
+    {
+      "name": "Language-specific cache cannot leak between languages",
+      "passed": true
+    },
+    {
+      "name": "Missing text falls back and is recorded, not blanked",
+      "passed": true
+    },
+    {
+      "name": "Localized search includes both original and translated title",
+      "passed": true
+    },
+    {
+      "name": "Offline and deployed bundles embed the same language resources",
+      "passed": true
+    },
+    {
+      "name": "Numeric and date formatting use the chosen locale",
+      "passed": true
+    },
+    {
+      "name": "Exports localize headings while keeping user content and line breaks",
+      "passed": true
+    },
+    {
+      "name": "Every supported locale can be saved and restored",
+      "passed": true
+    },
+    {
+      "name": "Local font files match the deployment and carry license records",
+      "passed": true
+    },
+    {
+      "name": "Offline fonts are embedded and deployment uses local URLs",
+      "passed": true
+    }
+  ]
+}

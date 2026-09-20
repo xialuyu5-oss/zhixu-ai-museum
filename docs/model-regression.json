@@ -1,0 +1,40 @@
+{
+  "version": "0.15.0",
+  "time": "2026-09-19T00:56:42.476Z",
+  "total": 8,
+  "passed": 8,
+  "checks": [
+    {
+      "name": "Both teaching splits preserve text, spaces, punctuation and emoji",
+      "passed": true
+    },
+    {
+      "name": "Scene changes the same sampling interval result",
+      "passed": true
+    },
+    {
+      "name": "Cumulative intervals select boundary consistently",
+      "passed": true
+    },
+    {
+      "name": "7B dense weights have independently calculated 4/8/16-bit storage",
+      "passed": true
+    },
+    {
+      "name": "Two-bit quantization is exactly four levels including endpoints",
+      "passed": true
+    },
+    {
+      "name": "Capacity is separate from evidence preservation and output reservation",
+      "passed": true
+    },
+    {
+      "name": "Review and retry cost can reverse cost per accepted result",
+      "passed": true
+    },
+    {
+      "name": "Quality gate distinguishes 90 and 95 percent without changing trials",
+      "passed": true
+    }
+  ]
+}

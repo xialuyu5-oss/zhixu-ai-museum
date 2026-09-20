@@ -1,0 +1,34 @@
+{
+  "total": 7,
+  "passed": 7,
+  "checks": [
+    {
+      "name": "Every current title and existing summary resolves in all eight languages",
+      "passed": true
+    },
+    {
+      "name": "Chinese view of the reported headline and summary is translated",
+      "passed": true
+    },
+    {
+      "name": "Original toggle returns exact publisher text",
+      "passed": true
+    },
+    {
+      "name": "Changed title rejects stale frontend translation",
+      "passed": true
+    },
+    {
+      "name": "Changed summary rejects stale frontend translation",
+      "passed": true
+    },
+    {
+      "name": "Missing current-language translation is an explicit original fallback",
+      "passed": true
+    },
+    {
+      "name": "Selecting a translation never changes original publisher text",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "version": "0.15.0",
+  "date": "2026-09-19",
+  "scope": "Node pure-model and delivery regression; FrictionModel tests concern retained legacy engine, not the new homepage narrative",
+  "total": 29,
+  "passed": 29,
+  "checks": [
+    {
+      "name": "Token teaching split is reversible for multilingual, whitespace, emoji and markup",
+      "passed": true
+    },
+    {
+      "name": "Two teaching segmentations show a difference without altering text",
+      "passed": true
+    },
+    {
+      "name": "Escaping prevents user markup execution",
+      "passed": true
+    },
+    {
+      "name": "Pure weight calculation",
+      "passed": true
+    },
+    {
+      "name": "Attention normalizes and masks future positions",
+      "passed": true
+    },
+    {
+      "name": "Harness completion requires an actual verified artifact",
+      "passed": true
+    },
+    {
+      "name": "Refusing approval produces no artifact",
+      "passed": true
+    },
+    {
+      "name": "Missing evidence blocks",
+      "passed": true
+    },
+    {
+      "name": "No read permission blocks",
+      "passed": true
+    },
+    {
+      "name": "False tool success is detected",
+      "passed": true
+    },
+    {
+      "name": "Retry consumes steps",
+      "passed": true
+    },
+    {
+      "name": "Budget is enforced",
+      "passed": true
+    },
+    {
+      "name": "No verification never reports DONE",
+      "passed": true
+    },
+    {
+      "name": "Read-only task creates no saved artifact",
+      "passed": true
+    },
+    {
+      "name": "Checkpoint rejects changed permissions",
+      "passed": true
+    },
+    {
+      "name": "Changed task invalidates approval",
+      "passed": true
+    },
+    {
+      "name": "Conflict replay deterministic",
+      "passed": true
+    },
+    {
+      "name": "No allocation before authorization; one grant means one allocation",
+      "passed": true
+    },
+    {
+      "name": "Round robin still has a queue",
+      "passed": true
+    },
+    {
+      "name": "Burst remains bounded",
+      "passed": true
+    },
+    {
+      "name": "All 108 articles retained",
+      "passed": true
+    },
+    {
+      "name": "Training learns 5.5 and boundary samples change it to 6.0",
+      "passed": true
+    },
+    {
+      "name": "The unseen 5.7 part exposes an error before boundary sampling",
+      "passed": true
+    },
+    {
+      "name": "All 60 research pathway and branch references resolve",
+      "passed": true
+    },
+    {
+      "name": "Combined browser scripts parse",
+      "passed": true
+    },
+    {
+      "name": "Root embeds archive and artwork; deploy ships external copies with otherwise identical content",
+      "passed": true
+    },
+    {
+      "name": "Embedded catalog keeps only the collections the page scripts read",
+      "passed": true
+    },
+    {
+      "name": "Deploy news.json matches data/news.json",
+      "passed": true
+    },
+    {
+      "name": "All editorial related links resolve to public exhibit routes",
+      "passed": true
+    }
+  ]
+}

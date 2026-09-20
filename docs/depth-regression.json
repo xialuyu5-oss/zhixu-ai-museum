@@ -1,0 +1,36 @@
+{
+  "version": "0.15.0",
+  "time": "2026-09-19T00:56:42.380Z",
+  "total": 7,
+  "passed": 7,
+  "checks": [
+    {
+      "name": "Initial error chart agrees with independent seven-candidate table",
+      "passed": true
+    },
+    {
+      "name": "Distinct zero-training-error rules disagree on unseen 5.7 mm input",
+      "passed": true
+    },
+    {
+      "name": "New training samples narrow the zero-error interval without inserting test samples",
+      "passed": true
+    },
+    {
+      "name": "Chart marks and accessible description retain zero and nonzero scores",
+      "passed": true
+    },
+    {
+      "name": "Fast GPU kernel can lose overall once two transfers are counted",
+      "passed": true
+    },
+    {
+      "name": "All supported transfer/concurrency settings fit the shared 56-step axis",
+      "passed": true
+    },
+    {
+      "name": "Deployed artwork is byte-identical to the source artwork",
+      "passed": true
+    }
+  ]
+}
