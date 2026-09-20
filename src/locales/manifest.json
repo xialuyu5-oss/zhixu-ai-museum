@@ -1,0 +1,10 @@
+[
+  {"id":"zh-CN","name":"简体中文"},
+  {"id":"zh-TW","name":"繁體中文"},
+  {"id":"en","name":"English"},
+  {"id":"ja","name":"日本語"},
+  {"id":"ko","name":"한국어"},
+  {"id":"de","name":"Deutsch"},
+  {"id":"fr","name":"Français"},
+  {"id":"ru","name":"Русский"}
+]
