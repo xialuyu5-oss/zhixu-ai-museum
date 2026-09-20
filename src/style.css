@@ -141,8 +141,8 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 ::selection {
-  background: #c3ddce;
-  color: #153737;
+  background: #90b5ff;
+  color: #091529;
 }
 [hidden] {
   display: none !important;
@@ -826,7 +826,7 @@ a {
   flex: 1;
   min-height: 0;
   position: relative;
-  background: radial-gradient(ellipse at 50% 48%, #d8e6dc80, transparent 69%);
+  background: radial-gradient(ellipse at 50% 48%, #c5d8fa80, transparent 69%);
   overflow: hidden;
   border-radius: 18px;
   touch-action: pan-y;
@@ -1282,13 +1282,13 @@ a {
   transition: width 0.3s;
 }
 .budget-bars span:nth-child(2) {
-  background: #749e8e;
+  background: #476b9b;
 }
 .budget-bars span:nth-child(3) {
-  background: #b6845c;
+  background: #985123;
 }
 .budget-bars span:nth-child(4) {
-  background: #72878f;
+  background: #567188;
 }
 .attention-tokens {
   display: flex;

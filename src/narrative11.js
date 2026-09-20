@@ -20,7 +20,7 @@ function narrativeControls(mode) {
     return ['数据', '方法', '算力']
       .map(
         (name, i) =>
-          `<button class="narrative-switch" data-do="narrative-input" data-id="${i}" aria-pressed="${NarrativeState.inputs[i]}"><i style="--input-color:${['#147763', '#b96738', '#457a9b'][i]}"></i>${name} · ${NarrativeState.inputs[i] ? '接通' : '关闭'}</button>`,
+          `<button class="narrative-switch" data-do="narrative-input" data-id="${i}" aria-pressed="${NarrativeState.inputs[i]}"><i style="--input-color:${['var(--teal)', 'var(--copper)', 'var(--signal)'][i]}"></i>${name} · ${NarrativeState.inputs[i] ? '接通' : '关闭'}</button>`,
       )
       .join('');
   return `<button class="narrative-switch" data-do="narrative-review" data-id="fast" aria-pressed="${!NarrativeState.review}">直接采用</button><button class="narrative-switch" data-do="narrative-review" data-id="check" aria-pressed="${NarrativeState.review}">先检查依据</button><button class="action" data-do="collision" data-id="0">继续追问 →</button>`;
@@ -112,69 +112,64 @@ class NarrativeEngine {
     c.fillStyle = color;
     c.fill();
   }
-  orbit(i, u) {
-    const a = u * Math.PI * 2 + this.t * (this.mode === 0 ? 0.13 : 0.27),
-      tilt = [-0.7, 0.4, 1.3][i] + Math.sin(this.t * 0.24) * 0.1,
-      r = Math.min(this.w * 0.3, this.h * 0.42),
-      x = Math.cos(a) * r,
-      y = Math.sin(a) * r * (this.mode === 0 ? 0.42 : 0.54);
-    return [
-      this.w * 0.5 + x * Math.cos(tilt) - y * Math.sin(tilt),
-      this.h * 0.5 + x * Math.sin(tilt) + y * Math.cos(tilt),
-      Math.sin(a),
-    ];
-  }
   draw() {
     if (!this.w || !this.h) return;
     this.dark = document.documentElement.dataset.theme === 'dark';
-    this.colors = this.dark ? ['#84cbb3', '#edb181', '#89b9d6'] : ['#147763', '#b96738', '#457a9b'];
+    this.colors = this.dark ? ['#79a5ff', '#ffc58c', '#69dff1'] : ['#2855d9', '#985123', '#087b90'];
     this.c.clearRect(0, 0, this.w, this.h);
     if (this.mode < 2) this.rings();
     else this.collisions();
   }
   rings() {
-    const segments = [],
-      count = 96,
-      small = this.w < 480;
-    for (let i = 0; i < 3; i++)
-      for (let j = 0; j < count; j++) {
-        if (this.mode === 0 && j % 12 > Math.min(11, 2 + NarrativeState.attempts)) continue;
-        const p = this.orbit(i, j / count),
-          q = this.orbit(i, (j + 1) / count);
-        segments.push({ p, q, z: p[2], i });
-      }
-    segments
-      .sort((a, b) => a.z - b.z)
-      .forEach((s) => {
-        const near = (s.z + 1) / 2,
-          active = this.mode === 0 || NarrativeState.inputs[s.i];
-        this.path(
-          [s.p, s.q],
-          active ? this.colors[s.i] + (near > 0.4 ? 'cc' : '50') : '#80908a30',
-          this.mode === 0 ? 2 + near * 3 : 3 + near * 6,
-        );
-      });
-    for (let i = 0; i < 3; i++)
-      for (let n = 0; n < 6; n++) {
-        if (this.mode === 1 && !NarrativeState.inputs[i]) continue;
-        const u = (this.t * 0.085 + n / 6 + i * 0.2) % 1;
-        this.dot(this.orbit(i, u), small ? 3 : 4, this.colors[i]);
-        if (this.mode === 1) {
-          const p = this.orbit(i, u),
-            k = (this.t * 0.22 + n / 6) % 1;
-          this.dot(
-            [p[0] + (this.w * 0.5 - p[0]) * k, p[1] + (this.h * 0.5 - p[1]) * k],
-            2.5,
-            this.colors[i],
-          );
+    const c = this.c, w = this.w, h = this.h;
+    const scale = Math.min(w / 780, h / 320), cx = w * 0.5, cy = h * 0.5;
+    const point = (x, y) => [cx + x * scale, cy + y * scale];
+    // Five translucent sections share a fixed projection. Only the signals move;
+    // no per-frame depth sort, DOM writes, glow filters or text on the canvas.
+    for (let layer = 4; layer >= 0; layer--) {
+      const x = -205 + layer * 97, y = -12 + layer * 6;
+      const poly = [point(x - 28, y - 90), point(x + 48, y - 115),
+        point(x + 48, y + 90), point(x - 28, y + 115)];
+      c.beginPath();
+      poly.forEach((p, i) => i ? c.lineTo(...p) : c.moveTo(...p));
+      c.closePath();
+      c.fillStyle = this.colors[layer % 3] + (this.dark ? '0d' : '09');
+      c.fill();
+      this.path([...poly, poly[0]], this.colors[layer % 3] + '65', 1);
+      this.path([poly[0], poly[3]], this.colors[layer % 3] + 'bb', 1.5);
+    }
+    for (let lane = 0; lane < 3; lane++) {
+      const active = this.mode === 0 || NarrativeState.inputs[lane];
+      const route = (u) => point(-300 + 600 * u,
+        (lane - 1) * 78 * (this.mode === 1 ? Math.pow(1 - u, 1.2) : 0.62)
+        + Math.sin(u * Math.PI) * 12);
+      const vertices = Array.from({length: 33}, (_, i) => route(i / 32));
+      const color = this.colors[lane];
+      this.path(vertices, color + (active ? '60' : '18'), 1.2);
+      this.dot(route(0), 4 * scale, color + (active ? 'ff' : '40'));
+      if (active) {
+        // Continuous time and position keep motion independent of refresh rate.
+        for (let n = 0; n < 2; n++) {
+          const u = (this.t * 0.12 + lane * 0.11 + n * 0.5) % 1;
+          this.path([route(Math.max(0, u - 0.035)), route(u)], color, 2.5);
+          this.dot(route(u), 3.2 * scale, color);
         }
       }
-    if (this.mode === 1)
-      this.dot(
-        [this.w * 0.5, this.h * 0.5],
-        14,
-        NarrativeState.inputs.every(Boolean) ? this.colors[0] : '#788682',
-      );
+      if (this.mode === 0) {
+        const retained = Math.ceil(Math.max(0, NarrativeState.attempts - lane) / 3);
+        for (let n = 0; n < retained; n++)
+          this.dot(point(248 + (n % 2) * 20, (lane - 1) * 48 + Math.floor(n / 2) * 14),
+            3.5 * scale, color);
+      }
+    }
+    if (this.mode === 1) {
+      const ready = NarrativeState.inputs.every(Boolean), p = point(300, 0);
+      this.dot(p, 15 * scale, this.dark ? '#101c30' : '#ffffff');
+      c.beginPath(); c.arc(...p, 15 * scale, 0, Math.PI * 2);
+      c.strokeStyle = ready ? this.colors[2] : this.colors[1]; c.lineWidth = 1.5; c.stroke();
+      if (ready) this.dot(p, 5 * scale, this.colors[2]);
+      else this.path([point(293, 0), point(307, 0)], this.colors[1], 2);
+    }
   }
   collisions() {
     const c = this.c,
@@ -215,7 +210,7 @@ class NarrativeEngine {
     const radius = small ? 21 : 32;
     c.beginPath();
     c.arc(...center, radius, 0, Math.PI * 2);
-    c.fillStyle = this.dark ? '#203f3b' : '#fffdf7';
+    c.fillStyle = this.dark ? '#101c30' : '#ffffff';
     c.fill();
     c.strokeStyle = this.colors[1];
     c.lineWidth = 2;
