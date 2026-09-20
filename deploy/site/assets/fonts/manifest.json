@@ -1,0 +1,143 @@
+[
+  {
+    "family": "Atlas Sans SC",
+    "file": "notosanssc.woff2",
+    "languages": [
+      "zh-CN"
+    ],
+    "source": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+    "sourceFile": "NotoSansSC[wght].ttf",
+    "sourceSha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "sha256": "b7ab9f10b1aaeca22fe4eb2ae952ab1a13c200c7f8c7344287efe6e9ab98b901",
+    "bytes": 393236,
+    "glyphCodepoints": 1664,
+    "license": "licenses/notosanssc-OFL.txt",
+    "missingCatalogCharacters": "ᵀᵇ⁰⁹↵↺"
+  },
+  {
+    "family": "Atlas Serif SC",
+    "file": "notoserifsc.woff2",
+    "languages": [
+      "zh-CN"
+    ],
+    "source": "https://github.com/google/fonts/tree/main/ofl/notoserifsc",
+    "sourceFile": "NotoSerifSC[wght].ttf",
+    "sourceSha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+    "sha256": "b048c625152fff18f8061048d9c276811488e8147a873058459334491a3ab2be",
+    "bytes": 508728,
+    "glyphCodepoints": 1664,
+    "license": "licenses/notoserifsc-OFL.txt",
+    "missingCatalogCharacters": "ᵀᵇ⁰⁹↵↺"
+  },
+  {
+    "family": "Atlas Sans TC",
+    "file": "notosanstc.woff2",
+    "languages": [
+      "zh-TW"
+    ],
+    "source": "https://github.com/google/fonts/tree/main/ofl/notosanstc",
+    "sourceFile": "NotoSansTC[wght].ttf",
+    "sourceSha256": "864727d210d54f2537bbe23b3a839436c3992af72de9322af5270897246bd44f",
+    "sha256": "e0d00fabe1970d19c473407f7b1c62eda46be2fa99b43d009a99e214e197d28d",
+    "bytes": 378536,
+    "glyphCodepoints": 1457,
+    "license": "licenses/notosanstc-OFL.txt",
+    "missingCatalogCharacters": "ᵇ⁰⁹幷"
+  },
+  {
+    "family": "Atlas Serif TC",
+    "file": "notoseriftc.woff2",
+    "languages": [
+      "zh-TW"
+    ],
+    "source": "https://github.com/google/fonts/tree/main/ofl/notoseriftc",
+    "sourceFile": "NotoSerifTC[wght].ttf",
+    "sourceSha256": "0077e18f57c6908f4a000969880940bdb0dad057c0e8d98b49dc364c3d1b09c6",
+    "sha256": "184127cb987ebec959f922b7a8d1a57ded233ebb03f5e251cd2a006d0b88179f",
+    "bytes": 506112,
+    "glyphCodepoints": 1457,
+    "license": "licenses/notoseriftc-OFL.txt",
+    "missingCatalogCharacters": "ᵇ⁰⁹幷"
+  },
+  {
+    "family": "Atlas Sans JP",
+    "file": "notosansjp.woff2",
+    "languages": [
+      "ja"
+    ],
+    "source": "https://github.com/google/fonts/tree/main/ofl/notosansjp",
+    "sourceFile": "NotoSansJP[wght].ttf",
+    "sourceSha256": "c2f3b4d463500a2ddcd3849cded1fceeb9fd6d1c32e6cbecd568453ba50fc68f",
+    "sha256": "ef548fb7fe13f91598fb8a7764306bea21f464086c71d018c306e1b99b32e4e1",
+    "bytes": 309736,
+    "glyphCodepoints": 1268,
+    "license": "licenses/notosansjp-OFL.txt",
+    "missingCatalogCharacters": "ᵇ⁰⁹让"
+  },
+  {
+    "family": "Atlas Serif JP",
+    "file": "notoserifjp.woff2",
+    "languages": [
+      "ja"
+    ],
+    "source": "https://github.com/google/fonts/tree/main/ofl/notoserifjp",
+    "sourceFile": "NotoSerifJP[wght].ttf",
+    "sourceSha256": "2fd527ba12b6a44ec30d796d633360da0aeba6c5d4af1304ce12bb4dc15a7dfc",
+    "sha256": "5a9303f019c2fc26d4d1cd399258a5ef8aa2479612cd5979b020c14506b72630",
+    "bytes": 423292,
+    "glyphCodepoints": 1268,
+    "license": "licenses/notoserifjp-OFL.txt",
+    "missingCatalogCharacters": "ᵇ⁰⁹让"
+  },
+  {
+    "family": "Atlas Sans KR",
+    "file": "notosanskr.woff2",
+    "languages": [
+      "ko"
+    ],
+    "source": "https://github.com/google/fonts/tree/main/ofl/notosanskr",
+    "sourceFile": "NotoSansKR[wght].ttf",
+    "sourceSha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "sha256": "26fb21c2985cb9bda6f63a228c1a5f2eb6b528fb2afb5754052824e5c0ca1869",
+    "bytes": 110912,
+    "glyphCodepoints": 983,
+    "license": "licenses/notosanskr-OFL.txt",
+    "missingCatalogCharacters": ""
+  },
+  {
+    "family": "Atlas Sans Latin",
+    "file": "sourcesans3.woff2",
+    "languages": [
+      "en",
+      "de",
+      "fr",
+      "ru"
+    ],
+    "source": "https://github.com/google/fonts/tree/main/ofl/sourcesans3",
+    "sourceFile": "SourceSans3[wght].ttf",
+    "sourceSha256": "042fe2cc0b933e328410d7acbd0aa6a1873dca5aef81875f4bc214b08825c7b9",
+    "sha256": "844d0a9135a9932ed7b6feb49c52ac02cd8ee6895f8fc0a259bd5f277c2ca46f",
+    "bytes": 38644,
+    "glyphCodepoints": 437,
+    "license": "licenses/sourcesans3-OFL.txt",
+    "missingCatalogCharacters": "①②③▧让"
+  },
+  {
+    "family": "Atlas Serif Latin",
+    "file": "lora.woff2",
+    "languages": [
+      "en",
+      "de",
+      "fr",
+      "ru"
+    ],
+    "source": "https://github.com/google/fonts/tree/main/ofl/lora",
+    "sourceFile": "Lora[wght].ttf",
+    "sourceSha256": "822a6621ccbe8d97d20ac88c1c41f5615c9c2c202eaa75f272cd452aac6475a7",
+    "sha256": "5cb7aa72ec8ff5a810b0292a174ad2c3c41f5a8f1ab5599a1b02e99fdee15dc6",
+    "bytes": 51464,
+    "glyphCodepoints": 404,
+    "license": "licenses/lora-OFL.txt",
+    "missingCatalogCharacters": "ᵇ⁰⁹←→↗①②③■▧○●✓让"
+  }
+]
