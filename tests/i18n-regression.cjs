@@ -219,7 +219,7 @@ check('Offline fonts are embedded and deployment uses local URLs', () => {
   assert.ok(!single.includes("url('assets/fonts/"));
 });
 const report = {
-  version: '0.15.0',
+  version: require('../package.json').version,
   time: new Date().toISOString(),
   total: checks.length,
   passed: checks.filter((c) => c.passed).length,

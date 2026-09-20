@@ -198,12 +198,17 @@ check('Combined browser scripts parse', () => {
 });
 const bundle = fs.readFileSync(path.join(root, 'index.html'), 'utf8'),
   site = fs.readFileSync(path.join(root, 'deploy/site/index.html'), 'utf8'),
-  archiveB64 = fs.readFileSync(path.join(root, 'src/archive.b64'), 'utf8').trim(),
+  archiveSource = Buffer.from(fs.readFileSync(path.join(root, 'src/archive.b64'), 'utf8').trim(), 'base64').toString('utf8'),
+  archiveStyled = fs.readFileSync(path.join(root, 'deploy/site/archive.html'), 'utf8'),
+  archiveB64 = Buffer.from(archiveStyled).toString('base64'),
   markers = /\{\{(?:STYLE|NEWS|DATA|CATALOG|ARCHIVE_INDEX|ARCHIVE|CODE|HERO_IMAGE)\}\}/;
 check(
   'Root embeds archive and artwork; deploy ships external copies with otherwise identical content',
   () => {
     assert(!markers.test(bundle) && !markers.test(site));
+    const theme = '<style>' + fs.readFileSync(path.join(root, 'src/future-archive.css'), 'utf8') + '</style>';
+    assert.equal(archiveStyled.replace(theme + '</head>', '</head>'), archiveSource,
+      'The archive theme must preserve all original corpus content and behavior');
     assert(bundle.includes(archiveB64));
     assert(!site.includes(archiveB64.slice(0, 120)));
     assert(site.includes('<html data-archive="external" '));
@@ -277,7 +282,7 @@ check('All editorial related links resolve to public exhibit routes', () => {
   assert(routes.size >= 12);
 });
 const report = {
-  version: '0.15.0',
+  version: require('../package.json').version,
   date: new Date().toISOString().slice(0, 10),
   scope:
     'Node pure-model and delivery regression; FrictionModel tests concern retained legacy engine, not the new homepage narrative',
