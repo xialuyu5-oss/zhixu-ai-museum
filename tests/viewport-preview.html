@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>本地视口预览</title>
+<style>body{margin:12px;background:#d9ddd9;font:14px system-ui}header{margin-bottom:12px}iframe{border:0;display:block;background:#f4f3ed}a{margin-right:18px}</style>
+<header>本地尺寸预览：<a href="?width=390&height=844">手机</a><a href="?width=844&height=390">横屏</a><a href="?width=1440&height=900">桌面</a></header>
+<iframe id="preview" title="展览预览" src="../deploy/site/index.html#act/2/0"></iframe>
+<script>
+const params=new URLSearchParams(location.search),frame=document.querySelector('iframe');
+frame.style.width=Math.max(320,Math.min(1920,Number(params.get('width'))||390))+'px';
+frame.style.height=Math.max(320,Math.min(1080,Number(params.get('height'))||844))+'px';
+const route=params.get('route');
+if(route && /^(act\/[1-6]\/[0-4]|concept\/[a-z-]+)$/.test(route))frame.src='../deploy/site/index.html#'+route;
+</script>
+</html>

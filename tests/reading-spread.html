@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <meta charset="utf-8" /><title>讲解区版式验收</title>
+  <style>
+    body {
+      margin: 16px;
+      font: 14px system-ui;
+    }
+    iframe {
+      display: block;
+      border: 0;
+      position: fixed;
+      top: 110px;
+      left: 16px;
+    }
+    pre {
+      position: relative;
+      z-index: 1;
+      background: #fff;
+      max-height: 65vh;
+      overflow: auto;
+    }
+  </style>
+  <button id="run">检查四语讲解区</button>
+  <p id="status">尚未开始</p>
+  <pre id="report"></pre>
+  <iframe id="app" title="被检查的页面"></iframe>
+  <script src="reading-spread.js"></script>
+</html>

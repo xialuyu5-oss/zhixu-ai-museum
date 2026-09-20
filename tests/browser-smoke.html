@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>知序 · 浏览器回归</title>
+<style>
+body{font:15px system-ui;margin:24px;background:#f4f3ed;color:#173f3c}button{padding:10px 20px}pre{white-space:pre-wrap}iframe{border:1px solid #ccc;display:block;margin-top:20px;position:fixed;left:24px;top:250px}#results{position:relative;z-index:1;background:#f4f3ed;max-height:60vh;overflow:auto;width:min(90vw,900px)}li{line-height:1.8}.fail{color:#a43c22}.pass{color:#176957}
+</style>
+<h1>知序 · 浏览器回归</h1>
+<p>本地 HTTP 测试。使用同源 iframe 模拟六种视口；新闻仅读取本地快照。会临时测试手记并恢复原值，不访问外部来源。</p>
+<button id="run">开始检查</button><button id="save" disabled>导出结果 JSON</button>
+<p id="status" role="status">尚未运行</p><ol id="results"></ol>
+<iframe id="app" title="被检查的展览"></iframe>
+<script src="browser-smoke.js"></script>
+</html>

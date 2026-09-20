@@ -1,0 +1,21 @@
+<!doctype html><meta charset="utf-8" /><title>截图反馈与状态切换回归</title>
+<style>
+  body {
+    font: 14px system-ui;
+  }
+  iframe {
+    display: block;
+    border: 1px solid #888;
+    margin-top: 12px;
+  }
+  .fail {
+    color: #b22;
+  }
+</style>
+<h1>截图反馈与状态切换回归</h1>
+<p>本地数据；检查四个历史方向、训练前后、资料室各站和结语顺序。</p>
+<button id="run">开始检查</button>
+<p id="status">待检查</p>
+<pre id="report"></pre>
+<iframe id="app" style="width: 1920px; height: 887px"></iframe>
+<script src="layout-feedback.js"></script>
