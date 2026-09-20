@@ -1,0 +1,80 @@
+# Publishes deploy/site to GitHub Pages and refreshes the news snapshot every six hours.
+# Nothing is committed back to the repository: the previous snapshot is read from the live site,
+# so the "keep old items when a source fails" behaviour works without repository churn.
+name: News and Pages
+
+on:
+  schedule:
+    # Off the hour: GitHub delays scheduled runs at :00 during busy periods.
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      first_publication:
+        description: '首次发布：仅在旧 news.json 返回 404 时允许建立新站'
+        required: false
+        default: false
+        type: boolean
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'tools/**'
+      - 'tests/**'
+      - 'data/**'
+      - 'build.py'
+      - 'server.py'
+      - '.github/workflows/news.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Read verified previous state and check public feeds
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          FIRST_PUBLICATION: ${{ inputs.first_publication }}
+        run: |
+          args=()
+          if [ "$FIRST_PUBLICATION" = "true" ]; then args+=(--allow-initial); fi
+          python tools/publish_news.py --base-url "$SITE_URL" "${args[@]}"
+
+      - name: Build single-file bundle and static site
+        run: python build.py
+
+      - name: News and local service tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Exhibit and delivery regression
+        run: npm test
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: deploy/site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
