@@ -1,0 +1,62 @@
+name: Museum website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'assets/**'
+      - 'data/**'
+      - 'tools/**'
+      - 'tests/**'
+      - 'deploy/site/**'
+      - 'build.py'
+      - 'server.py'
+      - 'package.json'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build using the committed news snapshot
+        run: python -B build.py
+      - name: Verify website behavior
+        run: npm test
+      - name: Verify data and publishing tools
+        run: python -B -m unittest discover -s tests -p "test_*.py" -v
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: deploy/site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish the museum
+        id: deployment
+        uses: actions/deploy-pages@v4
