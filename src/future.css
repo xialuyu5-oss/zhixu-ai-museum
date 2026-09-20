@@ -82,6 +82,7 @@ html:is(:lang(zh), :lang(ja), :lang(ko)) :is(h1, h2) { letter-spacing: 0.01em; }
 .masthead, .journey, .pager { border-color: var(--line); }
 /* Reserve the actual navigation height, including its padding and border. */
 html[data-density] .deck { grid-template-rows: auto minmax(0, 1fr) max-content; }
+html[data-density='tight'] #main { padding-bottom: 0; }
 .topnav button.active { color: var(--teal); }
 .topnav button.active::after { background: var(--teal); }
 .icon, .locale-control select { background: var(--paper); border-color: var(--line); }
