@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark"><meta name="theme-color" content="#f1f3ef">
+<meta name="description" content="知序 AI 科技馆 · 能力与选择。沿着六幕故事，一页一问，从人的需要走向 AI、智能体与共同的未来。">
+<title>能力与选择 · 知序 AI 科技馆</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%231b5755'/%3E%3Ccircle cx='25' cy='32' r='17' fill='none' stroke='%23f5f4ed'/%3E%3Ccircle cx='39' cy='32' r='17' fill='none' stroke='%23d6a276'/%3E%3C/svg%3E">
+<style>{{STYLE}}</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到展品</a>
+<header class="masthead">
+<a class="brand" href="#entrance" aria-label="回到序厅"><span class="brand-art" aria-hidden="true"><i></i><i></i></span><span>知序 <b>AI</b><small>科技馆</small></span></a>
+<nav class="topnav" aria-label="主导航"><button data-do="guide">展览导览</button><button data-do="basics">基础知识</button><button data-do="library">资料室</button><button data-do="go" data-route="news">AI 新闻</button><button data-do="notes">我的手记</button></nav>
+<div class="utilities"><label class="locale-control"><span class="locale-label" data-i18n-skip>Language / 语言 / 言語</span><select id="locale-picker" aria-label="Language / 语言 / 言語" data-i18n-skip>{{LOCALE_OPTIONS}}</select></label><button class="icon" id="motion" data-do="motion" aria-label="暂停动效">Ⅱ</button><button class="icon" id="theme" data-do="theme" aria-label="切换深色主题">◐</button><button class="icon menu-toggle" data-do="guide" aria-label="打开导览">☰</button></div>
+</header>
+<main id="main" tabindex="-1"></main>
+<footer id="journey" class="journey"></footer>
+<dialog id="guide" aria-labelledby="guide-title"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript>本展览需要 JavaScript 来显示交互页面。没有自动模型调用、外部字体或统计请求。</noscript>
+<script type="application/json" id="news-data">{{NEWS}}</script>
+<script type="application/json" id="locale-data">{{LOCALES}}</script>
+<script type="application/json" id="museum-data">{{DATA}}</script>
+<script type="application/json" id="catalog-data">{{CATALOG}}</script>
+<script type="application/json" id="archive-index">{{ARCHIVE_INDEX}}</script>
+<script type="application/octet-stream" id="archive-data">{{ARCHIVE}}</script>
+<script>{{CODE}}</script>
+</body></html>

@@ -1,0 +1,910 @@
+/* Three open questions, rather than an unrelated model-attention diagram. */
+.meaning-reflection {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding-block: 18px;
+}
+.meaning-reflection article {
+  position: relative;
+  padding: 22px 18px;
+  border-top: 1px solid var(--teal);
+  background: var(--soft);
+}
+.meaning-reflection article > span {
+  font: 12px var(--mono);
+  color: var(--copper);
+}
+.meaning-reflection h4 {
+  margin: 14px 0 6px;
+  font-size: 22px;
+  color: var(--ink);
+}
+.meaning-reflection p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+@media (max-width: 779px), (max-height: 480px) {
+  .meaning-reflection {
+    gap: 7px;
+    padding-block: 5px;
+  }
+  .meaning-reflection article {
+    padding: 10px 8px;
+  }
+  .meaning-reflection h4 {
+    font-size: 17px;
+    margin: 8px 0 4px;
+  }
+  .meaning-reflection p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+/* The illustration occupies available space; it never pushes text off the slide. */
+.collaboration-scene {
+  position: relative;
+  flex: 1 1 140px;
+  min-height: 105px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #eee8de;
+}
+.collaboration-scene img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+}
+.collaboration-scene figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: linear-gradient(transparent, rgba(249, 247, 240, 0.97) 32%);
+  padding: 20px 18px 9px;
+  color: #173c3d;
+  font-size: 13px;
+}
+.collaboration-scene figcaption span {
+  text-align: center;
+}
+.collaboration-scene b {
+  color: #a25632;
+  margin-right: 8px;
+  font-family: var(--mono);
+}
+.collaboration-scene > small {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  font-size: 10px;
+  color: #173c3d;
+  background: #fff9;
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+.collaboration-track {
+  position: absolute;
+  inset: 48% 12% auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #b67a44bb, #6fa3a8aa, transparent);
+}
+.collaboration-track i {
+  position: absolute;
+  top: -3px;
+  width: 7px;
+  height: 7px;
+  background: #dbb681;
+  border-radius: 50%;
+  box-shadow: 0 0 9px 3px #ffe7a6aa;
+  animation: workSignal 6s linear infinite;
+}
+.collaboration-track i:nth-child(2) {
+  animation-delay: -2s;
+}
+.collaboration-track i:nth-child(3) {
+  animation-delay: -4s;
+}
+@keyframes workSignal {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  8%,
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+@media (min-width: 780px) and (min-height: 471px) {
+  [data-lesson='need10'] > .lesson-content {
+    gap: 12px;
+  }
+  [data-lesson='need10'] .lesson-intro {
+    flex: none;
+  }
+  [data-lesson='need10'] .era-card {
+    padding: 14px 22px;
+    gap: 6px;
+  }
+  [data-lesson='need10'] .era-card h2 {
+    font-size: 24px;
+    margin: 5px 0 10px;
+  }
+  [data-lesson='need10'] .era-card ol {
+    gap: 9px;
+  }
+  [data-lesson='need10'] .lesson-takeaway {
+    padding: 10px 16px;
+  }
+  [data-lesson='need10'] .lesson-takeaway span {
+    line-height: 1.5;
+  }
+}
+@media (min-width: 780px) and (min-height: 471px) and (max-height: 800px) {
+  [data-lesson='need10'] .lesson-intro h2 {
+    font-size: 22px;
+    margin: 0 0 4px;
+  }
+  [data-lesson='need10'] .lesson-intro p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  [data-lesson='need10'] .era-card {
+    padding: 10px 16px;
+  }
+  [data-lesson='need10'] .era-card h2 {
+    font-size: 20px;
+    margin: 2px 0 6px;
+  }
+  [data-lesson='need10'] .era-card ol {
+    gap: 5px;
+  }
+  [data-lesson='need10'] .era-card li {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .collaboration-scene {
+    min-height: 85px;
+  }
+}
+/* Keep the question and its action together without a mostly empty second page. */
+@media (min-width: 1101px) and (min-height: 481px) {
+  [data-lesson='history10'] .reading-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 8px;
+    padding: 12px 15px;
+    border-left: 3px solid var(--copper);
+    background: var(--paper);
+  }
+  [data-lesson='history10'] .reading-end .depth-callout {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  [data-lesson='history10'] .reading-end > .action {
+    background: none;
+    color: var(--teal);
+    border: 0;
+    border-radius: 0;
+    min-height: 30px;
+    padding: 3px 0;
+    margin: 5px 0 0;
+    box-shadow: none;
+  }
+}
+/* One open drawer, one handoff: the active panel receives the remaining height. */
+.spec-body:has(> .workflow-drawers) {
+  padding: 18px 22px;
+}
+.workflow-drawers {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 1;
+  min-height: 340px;
+  width: 100%;
+}
+.workflow-drawer {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  display: grid;
+  grid-template-rows: auto 0fr;
+  min-height: 0;
+  flex-shrink: 0;
+  transition:
+    grid-template-rows 0.28s var(--ease),
+    background 0.28s;
+}
+.workflow-drawer h3 {
+  margin: 0;
+  font: inherit;
+}
+.workflow-drawer h3 button {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25px minmax(0, 1fr) auto 22px;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  min-height: 43px;
+  padding: 9px 14px;
+}
+.workflow-drawer .seq {
+  font: 11px var(--mono);
+  color: var(--copper);
+}
+.workflow-drawer button small {
+  font-size: 12px;
+  color: var(--muted);
+}
+.workflow-drawer button i {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--teal);
+  transition: transform 0.25s;
+}
+.workflow-drawer.active {
+  grid-template-rows: auto 1fr;
+  flex: 1 0 auto;
+  border-color: var(--teal);
+  background: var(--soft);
+}
+.workflow-drawer.active button i {
+  transform: rotate(45deg);
+}
+.workflow-reveal {
+  overflow: hidden;
+  min-height: 0;
+  visibility: hidden;
+  transition: visibility 0.28s;
+}
+.workflow-drawer.active .workflow-reveal {
+  visibility: visible;
+}
+.workflow-inner {
+  padding: 0 16px 12px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.workflow-inner > p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0;
+}
+.workflow-handoff {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr);
+  align-items: center;
+  gap: 9px;
+}
+.workflow-handoff section {
+  border-top: 1px solid var(--line);
+  padding-top: 9px;
+}
+.workflow-handoff small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  margin-bottom: 3px;
+}
+.workflow-handoff strong {
+  font-size: 17px;
+  line-height: 1.4;
+  display: block;
+}
+.handoff-arrow {
+  color: var(--copper);
+  font-size: 28px;
+  animation: handoffPulse 2s ease-in-out infinite;
+}
+@keyframes handoffPulse {
+  50% {
+    transform: translateX(5px);
+  }
+}
+/* The reader frame is stable across content, source and mechanism tabs. */
+#frame-layer:has(.native-reader) {
+  animation: none;
+}
+.native-reader > .tabs {
+  display: grid;
+  grid-template-columns: repeat(var(--reader-tabs, 4), minmax(0, 1fr));
+  width: min(100%, calc(var(--reader-tabs, 4) * 124px));
+  gap: 6px;
+}
+.native-reader > .tabs button {
+  padding: 6px 10px;
+  min-width: 0;
+  min-height: 42px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+}
+.native-reader .reader-part {
+  align-content: start;
+  scrollbar-gutter: stable;
+}
+.native-reader .reader-label {
+  position: static;
+  min-height: 0;
+}
+.native-reader .reader-art {
+  margin-top: 18px;
+}
+.native-reader .reader-body {
+  width: 100%;
+}
+/* The same endpoints are retained while the adapter topology changes. */
+.connection-experiment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+}
+.connection-experiment > * {
+  flex-shrink: 0;
+}
+.connection-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.connection-view-tabs {
+  display: none;
+}
+.connection-structure {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 155px;
+}
+.connection-structure .connection-map {
+  min-height: 120px;
+}
+.spec-body:has(> .connection-experiment) {
+  padding: 16px 22px;
+}
+.connection-question {
+  font-size: 17px;
+  margin: 0;
+}
+.connection-map {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  gap: 34px;
+  align-items: center;
+  width: 100%;
+  min-height: 145px;
+  padding: 15px 5px;
+  flex: 1;
+}
+.connection-map.mcp {
+  grid-template-columns: 1fr 1.05fr 1.05fr 1fr;
+  gap: 23px;
+}
+.connection-map > div {
+  position: relative;
+  min-width: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.connection-map > div:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 34px;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--teal) 0 5px, transparent 5px 9px);
+  animation: connectionSignal 1.5s linear infinite;
+}
+.connection-map.mcp > div:not(:last-child)::after {
+  width: 23px;
+}
+@keyframes connectionSignal {
+  to {
+    background-position: 18px 0;
+  }
+}
+.connection-host,
+.connection-client,
+.connection-server {
+  border: 1px solid var(--teal);
+  border-radius: 10px;
+  background: var(--soft);
+  padding: 18px 8px;
+}
+.connection-host span,
+.connection-client span,
+.connection-server span {
+  display: block;
+  font-size: 11px;
+  margin-top: 8px;
+  color: var(--muted);
+}
+.connection-host span {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 2px 14px;
+  background: var(--paper);
+}
+.connection-adapters,
+.connection-endpoints {
+  display: grid;
+  gap: 14px;
+}
+.connection-adapters > div,
+.connection-endpoints > div {
+  border: 1px solid var(--line);
+  padding: 12px 7px;
+  border-radius: 8px;
+  background: var(--paper);
+}
+.connection-adapters > div {
+  border-style: dashed;
+}
+.connection-adapters > div,
+.connection-endpoints > div {
+  position: relative;
+}
+.connection-map.direct > .connection-adapters::after {
+  display: none;
+}
+.connection-adapters::before,
+.connection-map.mcp .connection-endpoints::before {
+  content: '';
+  position: absolute;
+  left: -17px;
+  top: 25%;
+  bottom: 25%;
+  border-left: 1px solid var(--teal);
+}
+.connection-adapters > div::before,
+.connection-adapters > div::after,
+.connection-map.mcp .connection-endpoints > div::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background: var(--teal);
+}
+.connection-adapters > div::before {
+  left: -17px;
+  width: 17px;
+}
+.connection-adapters > div::after {
+  right: -35px;
+  width: 34px;
+}
+.connection-map.direct > .connection-host::after {
+  width: 17px;
+}
+.connection-map.mcp .connection-endpoints::before {
+  left: -12px;
+}
+.connection-map.mcp .connection-endpoints > div::before {
+  left: -12px;
+  width: 12px;
+}
+.connection-map.mcp > .connection-server::after {
+  width: 11px;
+}
+.connection-endpoints > div {
+  border-color: var(--copper);
+}
+.connection-server {
+  border-color: var(--copper);
+}
+.connection-trace {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+.connection-trace > .tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+}
+.connection-trace > .tabs button {
+  white-space: normal;
+  font-size: 13px;
+  min-height: 37px;
+  padding: 6px 8px;
+  border-radius: 7px;
+}
+.connection-message {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--soft);
+  padding: 12px 14px;
+  border-left: 3px solid var(--teal);
+  min-height: 72px;
+  margin-top: 10px;
+}
+.connection-message code {
+  font: 12px/1.6 var(--mono);
+  color: var(--teal);
+  min-width: 110px;
+  max-width: 38%;
+  overflow-wrap: anywhere;
+}
+.connection-message p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+.connection-caption {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+.connection-experiment footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+.connection-experiment footer > span {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.connection-experiment footer .action {
+  font-size: 12px;
+  min-height: 34px;
+  padding: 8px 12px;
+  flex: none;
+}
+.reader-art .connection-map {
+  font-size: 12px;
+  min-height: 170px;
+  gap: 12px;
+  padding: 10px 0;
+}
+.reader-art .connection-map strong,
+.reader-art .connection-map > div {
+  font-size: 11px;
+}
+.reader-art .connection-map > div:not(:last-child)::after {
+  width: 12px;
+}
+.reader-art .connection-map > div {
+  padding: 10px 4px;
+}
+.reader-art .connection-map span {
+  font-size: 10px;
+}
+.reader-art:has(.connection-map) {
+  max-width: none;
+}
+@media (min-width: 1101px) and (max-height: 820px) {
+  .workflow-drawers {
+    min-height: 305px;
+    gap: 5px;
+  }
+  .workflow-drawer h3 button {
+    min-height: 32px;
+    padding: 4px 10px;
+    font-size: 13px;
+  }
+  .workflow-handoff strong {
+    font-size: 15px;
+  }
+  .workflow-inner {
+    gap: 12px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    padding: 0 12px 8px;
+  }
+  .workflow-inner > p {
+    font-size: 13px;
+  }
+  .connection-experiment {
+    gap: 8px;
+  }
+  .connection-structure {
+    min-height: 128px;
+  }
+  .connection-structure .connection-map {
+    min-height: 110px;
+  }
+  .connection-adapters > div,
+  .connection-endpoints > div {
+    padding: 8px 5px;
+    font-size: 13px;
+  }
+  .connection-controls .tabs button {
+    min-height: 34px;
+    padding: 6px 9px;
+    font-size: 13px;
+  }
+  .connection-map {
+    min-height: 110px;
+    padding: 8px 2px;
+  }
+  .connection-question {
+    font-size: 15px;
+  }
+  .connection-message {
+    min-height: 60px;
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 779px), (max-height: 480px) {
+  .workflow-drawers {
+    min-height: 350px;
+  }
+  .workflow-drawer h3 button {
+    gap: 7px;
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+  .workflow-drawer button small {
+    font-size: 10px;
+  }
+  .workflow-handoff strong {
+    font-size: 14px;
+  }
+  .workflow-inner > p {
+    font-size: 12px;
+  }
+  .connection-map {
+    gap: 14px;
+    min-height: 160px;
+  }
+  .connection-map.mcp {
+    gap: 11px;
+  }
+  .connection-map > div {
+    font-size: 11px;
+  }
+  .connection-map > div:not(:last-child)::after {
+    width: 14px;
+  }
+  .connection-map.mcp > div:not(:last-child)::after {
+    width: 11px;
+  }
+  .connection-host,
+  .connection-client,
+  .connection-server {
+    padding: 10px 4px;
+  }
+  .connection-map span {
+    font-size: 10px;
+  }
+  .connection-question {
+    font-size: 14px;
+  }
+  .connection-message {
+    display: block;
+    min-height: 94px;
+  }
+  .connection-message code {
+    max-width: none;
+  }
+  .connection-message p {
+    font-size: 12px;
+  }
+  .connection-trace > .tabs button {
+    font-size: 11px;
+    padding: 5px;
+  }
+  .connection-experiment footer {
+    flex-wrap: wrap;
+  }
+  .connection-view-tabs {
+    display: block;
+  }
+  .connection-controls {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .connection-controls .tabs button {
+    min-height: 30px;
+    padding: 5px 9px;
+    font-size: 12px;
+  }
+  .connection-experiment[data-connection-view='map'] .connection-trace,
+  .connection-experiment[data-connection-view='call'] .connection-structure {
+    display: none;
+  }
+  .connection-structure {
+    min-height: 0;
+  }
+  .connection-experiment > .connection-trace {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 0;
+  }
+  .connection-experiment footer .action {
+    padding: 5px 8px;
+    min-height: 30px;
+  }
+  .workflow-drawer h3 button {
+    min-height: 34px;
+    padding: 5px 8px;
+  }
+  .workflow-drawer button small {
+    max-width: 85px;
+  }
+  .workflow-drawer:not(.active) button small {
+    display: none;
+  }
+  .workflow-drawer:not(.active) h3 button {
+    grid-template-columns: 25px minmax(0, 1fr) 22px;
+  }
+  .workflow-inner {
+    height: auto;
+    justify-content: flex-start;
+    gap: 7px;
+    padding: 0 10px 8px;
+  }
+  .connection-adapters::before {
+    left: -7px;
+  }
+  .connection-adapters > div::before {
+    left: -7px;
+    width: 7px;
+  }
+  .connection-adapters > div::after {
+    right: -15px;
+    width: 14px;
+  }
+  .connection-map.direct > .connection-host::after {
+    width: 7px;
+  }
+  .connection-map.mcp .connection-endpoints::before {
+    left: -6px;
+  }
+  .connection-map.mcp .connection-endpoints > div::before {
+    left: -6px;
+    width: 6px;
+  }
+  .connection-map.mcp > .connection-server::after {
+    width: 5px;
+  }
+}
+@media (max-height: 480px) {
+  .spec-body:has(> .workflow-drawers),
+  .spec-body:has(> .connection-experiment) {
+    padding: 6px 12px;
+  }
+  .workflow-drawers {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto auto minmax(0, 1fr);
+    min-height: 0;
+    gap: 4px;
+  }
+  .workflow-drawer {
+    display: contents;
+  }
+  .workflow-drawer h3 button {
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    grid-template-columns: 20px 1fr;
+    min-height: 32px;
+    font-size: 11px;
+    padding: 5px;
+  }
+  .workflow-drawer button small,
+  .workflow-drawer button i {
+    display: none;
+  }
+  .workflow-drawer.active button {
+    background: var(--soft);
+    border-color: var(--teal);
+  }
+  .workflow-reveal {
+    display: none;
+  }
+  .workflow-drawer.active .workflow-reveal {
+    display: block;
+    grid-column: 1/-1;
+    grid-row: 3;
+    overflow: auto;
+    background: var(--soft);
+    border-radius: 8px;
+  }
+  .workflow-inner {
+    padding: 8px 10px;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .workflow-handoff section {
+    padding-top: 0;
+    border: 0;
+  }
+  .workflow-handoff strong {
+    font-size: 12px;
+  }
+  .workflow-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .connection-controls {
+    flex-direction: row;
+  }
+  .connection-experiment {
+    gap: 3px;
+  }
+  .connection-map,
+  .connection-structure .connection-map {
+    min-height: 52px;
+    padding: 0;
+  }
+  .connection-host,
+  .connection-client,
+  .connection-server {
+    padding: 4px;
+  }
+  .connection-host span,
+  .connection-client span,
+  .connection-server span {
+    margin-top: 2px;
+  }
+  .connection-adapters,
+  .connection-endpoints {
+    gap: 5px;
+  }
+  .connection-adapters > div,
+  .connection-endpoints > div {
+    padding: 2px;
+  }
+  .connection-caption {
+    font-size: 10px;
+    line-height: 1.35;
+  }
+  .connection-experiment footer {
+    padding-top: 3px;
+    flex-wrap: nowrap;
+  }
+  .connection-experiment footer > span {
+    font-size: 10px;
+  }
+  .connection-experiment > .connection-trace {
+    padding-top: 0;
+  }
+  .connection-trace > .tabs button {
+    min-height: 26px;
+  }
+  .connection-message {
+    display: flex;
+    min-height: 0;
+    padding: 5px 10px;
+    margin-top: 4px;
+  }
+  .connection-message p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+}

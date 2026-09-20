@@ -1,0 +1,915 @@
+/* Clear navigation, contained interactions and responsive reading rhythm. */
+.deck {
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+.pager {
+  min-height: 44px;
+  padding-top: 5px;
+}
+.page-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.page-selector > span {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.pager .dots {
+  display: flex;
+  gap: 7px;
+}
+.pager .dots button {
+  width: 36px;
+  height: 32px;
+  min-height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  font: 12px var(--mono);
+  color: var(--ink);
+  background: var(--paper);
+}
+.pager .dots button::after {
+  display: none;
+}
+.pager .dots button.active {
+  color: var(--paper);
+  background: var(--ink);
+  border-color: var(--ink);
+  box-shadow: 0 3px 12px #0001;
+}
+.pager .dots button:hover {
+  border-color: var(--teal);
+}
+.pager > .action,
+.pager-right > .action {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  padding: 7px 12px;
+}
+.pager-right > .action {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+.narrative-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 8px;
+  flex: none;
+}
+.narrative-legend > strong {
+  font-size: 17px;
+  font-family: var(--serif);
+}
+.narrative-legend > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.narrative-legend span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+}
+.narrative-legend i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+  flex: none;
+}
+.narrative-legend .signal-1 {
+  background: var(--copper);
+}
+.narrative-legend .signal-2 {
+  background: #89b9d6;
+}
+.story-exhibit .story-stage {
+  flex: 1 1 0;
+  min-height: 100px;
+  background: radial-gradient(ellipse at center, #69a9961c, transparent 70%);
+}
+.story-exhibit canvas {
+  contain: strict;
+}
+.need-scenario {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.need-comparison {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.need-visual {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100px;
+  min-height: 100px;
+}
+.need-visual .collaboration-scene {
+  min-height: 80px;
+}
+.scenario-caption {
+  display: none;
+}
+.need-view-tabs {
+  display: none;
+}
+.scenario-scene {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 0;
+  min-height: 0;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.scenario-scene svg {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+}
+.scene-paper {
+  fill: var(--paper);
+  stroke: var(--teal);
+  stroke-width: 1.5;
+}
+.scene-paper path {
+  fill: none;
+}
+.scene-paper .scene-check {
+  stroke: var(--copper);
+  stroke-width: 4;
+}
+.scene-flow {
+  stroke: var(--copper);
+  stroke-width: 2;
+  stroke-dasharray: 6 7;
+  animation: sceneFlow 3s linear infinite;
+}
+@keyframes sceneFlow {
+  to {
+    stroke-dashoffset: -52;
+  }
+}
+.scenario-scene figcaption {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  gap: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+.scenario-scene figcaption b {
+  margin-right: 10px;
+  color: var(--copper);
+  font: 12px var(--mono);
+}
+.depth-main .claim-steps button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+}
+.depth-main .claim-steps button > span {
+  display: block;
+  font: 30px var(--serif);
+  line-height: 1;
+  margin: 0;
+}
+.depth-main .claim-steps button > b {
+  display: block;
+}
+.depth-main .claim-steps i {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lab-rewrite {
+  width: 100%;
+}
+.lab-rewrite article {
+  padding-inline: 14px;
+}
+.lab-rewrite article > span {
+  white-space: nowrap;
+}
+@media (min-width: 1101px) {
+  .lab-workspace:has(.lab-rewrite) {
+    grid-template-columns: minmax(0, 1fr) minmax(170px, 25%);
+  }
+  .lab-rewrite p {
+    font-size: clamp(13px, 0.95vw, 18px);
+    line-height: 1.6;
+  }
+  .test-comparison {
+    gap: 22px;
+  }
+  .test-comparison .test-piece {
+    padding: 7px 15px;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 3px 16px;
+    align-self: end;
+  }
+  .test-comparison .test-piece dl {
+    padding-top: 5px;
+  }
+  .test-comparison .test-piece > strong {
+    font-size: 27px;
+  }
+}
+.depth-lesson[data-lesson='learning10'] .depth-evidence {
+  font-size: 11px;
+}
+.depth-lesson[data-lesson='learning10'] .depth-evidence p {
+  font-size: 11px;
+  line-height: 1.45;
+}
+/* These exhibits own their layout; generic pagination must not separate controls from results. */
+.spec-body:has(> .goal-editor),
+.spec-body:has(> .runtime-panel),
+.spec-body:has(> .connection-experiment) {
+  container-type: size;
+  padding: 14px 20px;
+  overflow: hidden;
+}
+.goal-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  height: 100%;
+}
+.goal-editor .preset-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+.goal-editor .preset-grid button {
+  min-height: 36px;
+  padding: 8px;
+  font-size: 14px;
+}
+.goal-editor > .tabs {
+  flex: none;
+}
+.goal-example {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+}
+.goal-example article {
+  border-top: 2px solid var(--copper);
+  background: var(--paper);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.goal-example article + article {
+  border-color: var(--teal);
+  background: var(--soft);
+}
+.goal-example article > span {
+  color: var(--copper);
+  font-size: 13px;
+}
+.goal-example article + article > span {
+  color: var(--teal);
+}
+.goal-example p {
+  font-size: clamp(16px, 1.3vw, 23px);
+  line-height: 1.65;
+  margin: 10px 0;
+}
+.goal-example small {
+  font-size: 13px;
+  color: var(--muted);
+}
+.goal-fields {
+  min-height: 0;
+  flex: 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.goal-fields label {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.goal-fields textarea {
+  resize: none;
+  flex: 1;
+  min-height: 45px;
+}
+.goal-editor [hidden] {
+  display: none;
+}
+.goal-editor .feedback {
+  flex: none;
+  margin: 0;
+  font-size: 13px;
+  padding: 8px 12px;
+}
+.runtime-panel {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.runtime-panel > * {
+  flex-shrink: 0;
+}
+.runtime-panel .status-tag {
+  font: 13px var(--sans);
+}
+.runtime-panel .runtime-fault select {
+  padding: 7px 10px;
+  font-size: 12px;
+}
+.runtime-goal {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  margin: 0;
+}
+.runtime-goal > span {
+  color: var(--muted);
+  flex: none;
+}
+.runtime-goal b {
+  font-weight: 500;
+}
+.runtime-progress {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 6px;
+}
+.runtime-progress li {
+  border-top: 2px solid var(--line);
+  padding: 8px 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.runtime-progress li > span {
+  display: block;
+  font: 11px var(--mono);
+  margin-bottom: 5px;
+}
+.runtime-progress li.current {
+  background: var(--soft);
+  border-color: var(--copper);
+  color: var(--ink);
+}
+.runtime-progress li.done {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+.runtime-panel > .tabs {
+  gap: 5px;
+}
+.runtime-panel > .tabs button {
+  padding: 6px 12px;
+  min-height: 34px;
+  font-size: 13px;
+}
+.runtime-detail {
+  flex: 1 1 0;
+  min-height: 64px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+  overflow: auto;
+}
+.runtime-detail > p {
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 8px 0 0;
+}
+.runtime-detail > small {
+  font-size: 12px;
+  color: var(--muted);
+}
+.runtime-log p {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+.runtime-log b {
+  font: 12px var(--mono);
+  color: var(--copper);
+}
+.runtime-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+.runtime-footer .run-controls {
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.runtime-footer button,
+.runtime-recovery summary {
+  min-height: 34px;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+.runtime-recovery {
+  position: relative;
+}
+.runtime-recovery summary {
+  cursor: pointer;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.runtime-recovery > div {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 8px);
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 10px 35px #0002;
+  z-index: 2;
+}
+.coda {
+  isolation: isolate;
+}
+.coda-light {
+  inset: 0;
+  overflow: hidden;
+  opacity: 0.56;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 85%, #deaf7622, transparent 65%);
+  mask-image: radial-gradient(ellipse at center, #000 28%, transparent 72%);
+}
+.coda-light::before,
+.coda-light::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    158deg,
+    transparent 25%,
+    #fff1 29%,
+    #fff9 34%,
+    #fff4 39%,
+    transparent 46%
+  );
+  filter: blur(9px);
+  animation: codaDrift 18s ease-in-out infinite alternate;
+  will-change: transform, opacity;
+}
+.coda-light::after {
+  opacity: 0.4;
+  animation-delay: -9s;
+  animation-duration: 24s;
+  background: linear-gradient(156deg, transparent 35%, #fff4 43%, transparent 51%);
+}
+@keyframes codaDrift {
+  from {
+    transform: translate(-2%, 3%) rotate(-2deg);
+    opacity: 0.45;
+  }
+  to {
+    transform: translate(3%, -3%) rotate(2deg);
+    opacity: 0.9;
+  }
+}
+@media (min-width: 780px) and (max-height: 850px) {
+  .need-scenario {
+    gap: 8px;
+  }
+  .need-view-tabs {
+    display: block;
+  }
+  .need-scenario[data-view='compare'] .need-visual,
+  .need-scenario[data-view='scene'] .need-comparison {
+    display: none;
+  }
+  .need-comparison {
+    flex: 1;
+    min-height: 0;
+  }
+  .need-comparison .era-comparison {
+    flex: 1;
+    min-height: 0;
+  }
+  .need-visual {
+    flex: 1;
+    min-height: 0;
+  }
+  .scenario-caption {
+    display: block;
+    margin: 8px 0 0;
+    font-size: 14px;
+  }
+  .need-scenario .lesson-intro p {
+    display: none;
+  }
+}
+@container (max-height:460px) {
+  .connection-experiment {
+    gap: 6px;
+  }
+  .connection-structure {
+    min-height: 100px;
+  }
+  .connection-structure .connection-map {
+    min-height: 85px;
+    padding: 5px 0;
+  }
+  .connection-host,
+  .connection-client,
+  .connection-server {
+    padding: 9px 5px;
+  }
+  .connection-endpoints > div,
+  .connection-adapters > div {
+    padding: 5px;
+  }
+  .connection-controls .tabs button,
+  .connection-trace > .tabs button {
+    min-height: 30px;
+    padding: 4px 7px;
+    font-size: 12px;
+  }
+  .connection-message {
+    min-height: 48px;
+    padding: 7px 10px;
+    margin-top: 5px;
+  }
+  .connection-message p {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+  .connection-trace,
+  .connection-experiment footer {
+    padding-top: 6px;
+  }
+  .goal-example article {
+    padding: 12px;
+  }
+  .goal-example p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .goal-editor {
+    gap: 8px;
+  }
+  .runtime-panel {
+    gap: 7px;
+  }
+  .runtime-detail {
+    padding: 10px 12px;
+  }
+  .runtime-detail > p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .runtime-progress li {
+    padding: 5px 3px;
+  }
+}
+@container (max-height:340px) {
+  .connection-view-tabs {
+    display: block;
+  }
+  .connection-experiment[data-connection-view='map'] .connection-trace,
+  .connection-experiment[data-connection-view='call'] .connection-structure {
+    display: none;
+  }
+  .connection-trace {
+    flex: 1;
+  }
+  .runtime-progress {
+    display: none;
+  }
+  .runtime-goal {
+    display: none;
+  }
+}
+@media (max-width: 779px), (max-height: 480px) {
+  .pager {
+    min-height: 35px;
+    padding-top: 4px;
+  }
+  .page-selector > span,
+  .pager-label {
+    display: none;
+  }
+  .pager .dots {
+    gap: 4px;
+  }
+  .pager .dots button {
+    width: 26px;
+    height: 28px;
+    min-height: 28px;
+    font-size: 10px;
+  }
+  .pager .action {
+    padding: 5px 7px;
+    min-height: 30px;
+    font-size: 11px;
+  }
+  .pager .arrow {
+    display: none;
+  }
+  .narrative-legend {
+    gap: 4px;
+    padding: 0;
+  }
+  .narrative-legend > strong {
+    font-size: 13px;
+  }
+  .narrative-legend span {
+    font-size: 11px;
+  }
+  .story-exhibit .story-stage {
+    min-height: 45px;
+  }
+  .goal-editor .preset-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+  }
+  .goal-editor .preset-grid button {
+    font-size: 11px;
+    padding: 5px;
+    min-height: 30px;
+  }
+  .goal-editor > .tabs button {
+    font-size: 12px;
+    padding: 5px 8px;
+    min-height: 30px;
+  }
+  .goal-example {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .goal-example article {
+    padding: 10px;
+  }
+  .goal-example p {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  .goal-example small,
+  .goal-editor .feedback {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  .spec-body:has(> .runtime-panel),
+  .spec-body:has(> .goal-editor) {
+    padding: 10px;
+  }
+  .runtime-progress {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+  }
+  .runtime-progress li {
+    padding: 4px;
+    font-size: 10px;
+  }
+  .runtime-progress li > span {
+    display: inline;
+    margin-right: 5px;
+  }
+  .runtime-panel .status-tag {
+    font-size: 11px;
+  }
+  .runtime-detail > p {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+  .runtime-detail > .event-n {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  .runtime-panel > .tabs button {
+    padding: 4px 6px;
+    min-height: 28px;
+    font-size: 11px;
+  }
+  .runtime-footer button,
+  .runtime-recovery summary {
+    font-size: 11px;
+    padding: 6px 8px;
+    min-height: 30px;
+  }
+  .runtime-footer > .tiny {
+    font-size: 10px;
+  }
+}
+@media (max-height: 480px) {
+  .depth-main .claim-steps button {
+    padding: 5px 9px;
+    gap: 4px;
+  }
+  .depth-main .claim-steps button > span {
+    font-size: 18px;
+  }
+  .depth-main .claim-steps button > b {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  html:not(:lang(zh)) .lab-main:has(.lab-rewrite) .lab-workspace,
+  html:not(:lang(zh)) .lab-main:has(.lab-rewrite) .lab-stage,
+  html:not(:lang(zh)) .lab-main:has(.lab-rewrite) .lab-visual {
+    min-height: 0;
+  }
+  .lab-rewrite article {
+    padding: 3px 10px;
+  }
+  .lab-rewrite p {
+    margin-block: 4px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+  .lab-rewrite article > span {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  .goal-example {
+    grid-template-columns: 1fr 1fr;
+  }
+  .goal-editor .feedback,
+  .goal-example small {
+    display: none;
+  }
+  .goal-editor {
+    gap: 4px;
+  }
+  .goal-fields {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .goal-fields .field {
+    font-size: 11px;
+  }
+  .goal-fields textarea {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .runtime-progress {
+    display: none;
+  }
+  .runtime-detail {
+    min-height: 40px;
+    padding: 6px 10px;
+  }
+  .runtime-detail:has(> .event-n) {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .runtime-detail > .event-n {
+    flex: 0 0 125px;
+    font-size: 11px;
+  }
+  .runtime-detail > p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+/* Longer translations keep their full text without squeezing the diagram below its labels. */
+@media (min-width: 1101px) and (max-width: 1400px) and (min-height: 481px) and (max-height: 820px) {
+  html:is(:lang(de), :lang(fr), :lang(ru)) .depth-main {
+    gap: 8px;
+    padding-block: 12px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .depth-intro .depth-kicker {
+    display: none;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .depth-intro h2 {
+    font-size: 19px;
+    margin: 0 0 6px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .depth-intro p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .depth-topic-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .depth-topic-tabs button {
+    font-size: 12px;
+    line-height: 1.35;
+    padding: 7px 5px;
+    white-space: normal;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .claim-steps {
+    min-height: 76px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .claim-steps button {
+    padding: 10px;
+    gap: 7px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .claim-steps button > span {
+    font-size: 24px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .claim-detail {
+    padding: 8px 12px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .claim-detail p,
+  html:is(:lang(de), :lang(fr), :lang(ru)) .then-now p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .then-now h3 {
+    font-size: 17px;
+    line-height: 1.35;
+    margin-block: 7px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .history-today-footer .depth-callout {
+    padding-block: 5px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .history-today-footer .depth-callout b {
+    font-size: 13px;
+    line-height: 1.35;
+    margin-bottom: 0;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .history-today-footer .depth-callout p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-top: 2px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .depth-actions {
+    gap: 10px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .depth-actions button {
+    padding: 8px 12px;
+    font-size: 12px;
+    min-height: 34px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .depth-actions span {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .depth-result strong {
+    font-size: 24px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .test-comparison {
+    gap: 18px;
+    grid-template-rows: minmax(90px, 1fr) auto;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .test-ruler {
+    min-height: 90px;
+  }
+  html:is(:lang(de), :lang(fr), :lang(ru)) .test-piece dl > div {
+    font-size: 12px;
+  }
+}
+@container (max-height:260px) {
+  .connection-structure {
+    min-height: 72px;
+  }
+  .connection-structure .connection-map {
+    min-height: 52px;
+    padding: 2px 0;
+  }
+  .connection-structure > p {
+    font-size: 10px;
+    margin: 2px 0 0;
+  }
+  .connection-experiment footer {
+    padding-top: 3px;
+    font-size: 10px;
+  }
+  .connection-experiment footer button {
+    min-height: 25px;
+    padding: 3px 8px;
+    font-size: 10px;
+  }
+}
