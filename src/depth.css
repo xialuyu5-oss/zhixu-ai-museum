@@ -152,7 +152,7 @@
   left: 0;
   padding: 6px 10px;
   color: #fff;
-  background: #193c38db;
+  background: #101c30db;
   font-size: 11px;
   line-height: 1.5;
 }
@@ -384,10 +384,10 @@
   stroke-width: 1;
 }
 .plot-fail {
-  fill: #b9673810;
+  fill: #b9773910;
 }
 .plot-pass {
-  fill: #14776313;
+  fill: #087b9013;
 }
 .sample-point circle {
   stroke: var(--copper);
@@ -505,7 +505,7 @@
 }
 .cpu-node {
   fill: var(--paper);
-  stroke: #457a9b;
+  stroke: #3684ba;
   stroke-width: 2;
 }
 .gpu-node {
@@ -518,7 +518,7 @@
   fill: var(--soft);
 }
 .cuda-label {
-  fill: #b9673812;
+  fill: #b9773912;
   stroke: var(--copper);
 }
 .data-path {
@@ -541,7 +541,7 @@
     fill: var(--soft);
   }
   to {
-    fill: #b9673838;
+    fill: #b9773938;
   }
 }
 .flow-token {
@@ -698,7 +698,7 @@
   font-size: 17px;
 }
 .cost-track .cost-cpu {
-  background: #457a9b;
+  background: #3684ba;
   color: #fff;
 }
 .cost-gpu {
@@ -707,10 +707,10 @@
 .cost-copy {
   background: repeating-linear-gradient(
     45deg,
-    #b9673855,
-    #b9673855 4px,
-    #b9673899 4px,
-    #b9673899 8px
+    #b9773955,
+    #b9773955 4px,
+    #b9773999 4px,
+    #b9773999 8px
   );
 }
 .cost-axis {

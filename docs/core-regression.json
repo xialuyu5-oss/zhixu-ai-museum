@@ -1,6 +1,6 @@
 {
-  "version": "0.15.0",
-  "date": "2026-09-19",
+  "version": "0.16.0",
+  "date": "2026-09-20",
   "scope": "Node pure-model and delivery regression; FrictionModel tests concern retained legacy engine, not the new homepage narrative",
   "total": 29,
   "passed": 29,

@@ -28,6 +28,10 @@ def build():
     news_path.write_text(json.dumps(news, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     template = (SRC/'shell.html').read_text(encoding='utf-8')
     archive_b64 = (SRC/'archive.b64').read_text().strip()
+    # Preserve the historical corpus; apply the current palette to its retained tools.
+    archive_html = base64.b64decode(archive_b64).decode('utf-8')
+    archive_html = archive_html.replace('</head>', '<style>' + (SRC/'future-archive.css').read_text(encoding='utf-8') + '</style></head>', 1)
+    archive_b64 = base64.b64encode(archive_html.encode('utf-8')).decode('ascii')
     languages = json.loads((SRC/'locales/manifest.json').read_text(encoding='utf-8'))
     locales = {l['id']:json.loads((SRC/'locales'/f"{l['id']}.json").read_text(encoding='utf-8')) for l in languages}
     assert len(locales)==len(languages) and 'zh-CN' in locales and 'en' in locales
@@ -41,7 +45,7 @@ def build():
     common = {
         '{{LOCALES}}': embedded_json(json.dumps(locales,ensure_ascii=False,separators=(',',':'))),
         '{{LOCALE_OPTIONS}}': ''.join(f'<option value="{html.escape(l["id"])}">{html.escape(l["name"])}</option>' for l in languages),
-        '{{STYLE}}': '\n'.join((SRC/n).read_text(encoding='utf-8') for n in ['fonts.css','style.css','exhibition.css','revisions.css','news.css','lessons.css','depth.css','model-lab.css','i18n.css','reading-spread.css','typography.css','exhibit-visuals.css','usability.css']),
+        '{{STYLE}}': '\n'.join((SRC/n).read_text(encoding='utf-8') for n in ['fonts.css','style.css','exhibition.css','revisions.css','news.css','lessons.css','depth.css','model-lab.css','i18n.css','reading-spread.css','typography.css','exhibit-visuals.css','usability.css','future.css']),
         '{{NEWS}}': embedded_json((ROOT/'data/news.json').read_text(encoding='utf-8')),
         '{{DATA}}': embedded_json((SRC/'data.json').read_text(encoding='utf-8')),
         '{{CATALOG}}': embedded_json(catalog_json()),

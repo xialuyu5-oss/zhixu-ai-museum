@@ -91,7 +91,7 @@ check('Quality gate distinguishes 90 and 95 percent without changing trials', ()
   assert(b.passed / b.total >= 0.95);
 });
 const report = {
-  version: '0.15.0',
+  version: require('../package.json').version,
   time: new Date().toISOString(),
   total: checks.length,
   passed: checks.filter((c) => c.passed).length,

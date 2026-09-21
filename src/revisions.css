@@ -6,9 +6,9 @@
   --app-height: 100dvh;
   --lesson-gap: 18px;
   --lesson-pad: 24px;
-  --program: #346d9a;
-  --cuda: #a45c30;
-  --gpu: #167360;
+  --program: #2855d9;
+  --cuda: #985123;
+  --gpu: #087b90;
 }
 html,
 body {
@@ -231,11 +231,11 @@ body {
   min-width: 0;
 }
 .era-card.before {
-  background: #eee9df;
+  background: #e7edf6;
 }
 .era-card.now {
-  background: #e5eee4;
-  border-color: #bfd5c8;
+  background: #e5edfa;
+  border-color: #cdd9ec;
 }
 .era-mark {
   font-size: 12px;
@@ -471,7 +471,7 @@ body {
 .sample-rod {
   width: var(--rod);
   height: 17px;
-  background: linear-gradient(#94a9a8, #c0ceca 50%, #567c70);
+  background: linear-gradient(#809bb8, #c1d4eb 50%, #48678f);
   border-radius: 3px;
   margin: 9px 0;
   box-shadow: 0 4px 7px #1a423314;
@@ -485,12 +485,12 @@ body {
   padding: 4px 10px;
 }
 .sample-pass {
-  background: #ddece2;
-  color: #155d44;
+  background: #dfedf3;
+  color: #086579;
 }
 .sample-fail {
-  background: #f3e4d8;
-  color: #875334;
+  background: #f5e9dd;
+  color: #985123;
 }
 .threshold-stage {
   max-width: 920px;
@@ -505,7 +505,7 @@ body {
   position: relative;
   height: 75px;
   border-radius: 10px;
-  background: linear-gradient(90deg, #efe3d7 55%, #dcebe2 55%);
+  background: linear-gradient(90deg, #f5e9dd 55%, #dfedf3 55%);
   margin-top: 38px;
   align-items: center;
   justify-content: space-around;
@@ -564,8 +564,8 @@ body {
   background: var(--soft);
 }
 .test-piece.incorrect {
-  border-color: #b77044;
-  background: #f5e6d8;
+  border-color: #985123;
+  background: #f5e9dd;
 }
 .test-piece > strong {
   font:
@@ -645,15 +645,15 @@ body {
 }
 .program-box {
   border-color: var(--program);
-  background: #e8eef6;
+  background: #e1eafa;
 }
 .cuda-box {
   border-color: var(--cuda);
-  background: #f6e9dc;
+  background: #f5e9dd;
 }
 .gpu-box {
   border-color: var(--gpu);
-  background: #e2efe6;
+  background: #dfedf3;
 }
 .compute-map article {
   display: flex;
@@ -683,7 +683,7 @@ body {
 .compute-map p {
   font-size: 15px;
   line-height: 1.8;
-  color: #455a58;
+  color: #526581;
 }
 .map-arrow {
   font-size: 0;
@@ -2731,28 +2731,28 @@ body {
 }
 [data-theme='dark'] .era-card.before,
 [data-theme='dark'] .test-piece.incorrect {
-  background: #433c30;
+  background: #352b32;
 }
 [data-theme='dark'] .era-card.now,
 [data-theme='dark'] .test-piece {
-  background: #21453d;
+  background: #153647;
 }
 [data-theme='dark'] .program-box {
-  background: #243a4b;
+  background: #193553;
 }
 [data-theme='dark'] .cuda-box {
-  background: #493629;
+  background: #352b32;
 }
 [data-theme='dark'] .gpu-box {
-  background: #234237;
+  background: #153647;
 }
 [data-theme='dark'] .compute-map p {
   color: var(--muted);
 }
 [data-theme='dark'] {
-  --program: #93bee0;
-  --cuda: #e3a674;
-  --gpu: #86c6ac;
+  --program: #79a5ff;
+  --cuda: #ffc58c;
+  --gpu: #69dff1;
 }
 @media print {
   html,
@@ -2920,7 +2920,7 @@ body {
   margin: 0;
 }
 .threshold-ruler {
-  background: linear-gradient(90deg, #efe3d7 var(--threshold, 55%), #dcebe2 var(--threshold, 55%));
+  background: linear-gradient(90deg, #f5e9dd var(--threshold, 55%), #dfedf3 var(--threshold, 55%));
 }
 .era-mobile-controls .tabs {
   flex-wrap: nowrap;

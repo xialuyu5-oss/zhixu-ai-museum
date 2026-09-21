@@ -93,7 +93,7 @@ check('Deployed artwork is byte-identical to the source artwork', () => {
   );
 });
 const report = {
-  version: '0.15.0',
+  version: require('../package.json').version,
   time: new Date().toISOString(),
   total: results.length,
   passed: results.filter((r) => r.passed).length,

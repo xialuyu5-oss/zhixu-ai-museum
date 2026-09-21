@@ -1,0 +1,36 @@
+/* The retained library tools use their own vocabulary of theme variables. */
+:root, html[data-theme='light'] {
+  color-scheme: light;
+  --bg: #eff4fc;
+  --surface: #ffffff;
+  --surface-alt: #e5edfa;
+  --ink: #172940;
+  --muted: #526581;
+  --faint: #5e718c;
+  --line: #cdd9ec;
+  --accent: #2855d9;
+  --accent-ink: #2855d9;
+  --accent-soft: #e1eafa;
+  --blue: #2855d9;
+  --blue-soft: #e1eafa;
+  --orange: #985123;
+  --orange-soft: #f5e9dd;
+}
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #080f1f;
+  --surface: #101c30;
+  --surface-alt: #172a43;
+  --ink: #eaf2ff;
+  --muted: #a3b3ce;
+  --faint: #97abc8;
+  --line: #2a3c57;
+  --accent: #79a5ff;
+  --accent-ink: #90b5ff;
+  --accent-soft: #193553;
+  --blue: #79a5ff;
+  --blue-soft: #193553;
+  --orange: #ffc58c;
+  --orange-soft: #352b32;
+}
+::selection { background: var(--accent-soft); color: var(--ink); }

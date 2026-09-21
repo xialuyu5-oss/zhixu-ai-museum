@@ -125,7 +125,7 @@
   position: relative;
   min-height: 144px;
   margin: 8px 20px 16px;
-  background: linear-gradient(90deg, #b9673812 0 var(--cut), #14776316 var(--cut) 100%);
+  background: linear-gradient(90deg, #b9773912 0 var(--cut), #087b9016 var(--cut) 100%);
   border-radius: 10px;
   border-bottom: 1px solid var(--line);
 }
@@ -227,7 +227,7 @@
   gap: 18px;
 }
 .flow-layer {
-  --layer: #457a9b;
+  --layer: #3684ba;
   border: 1px solid var(--line);
   border-top: 4px solid var(--layer);
   border-radius: 10px;
@@ -236,10 +236,10 @@
   min-width: 0;
 }
 .flow-layer.cuda {
-  --layer: #b96738;
+  --layer: #b97739;
 }
 .flow-layer.gpu {
-  --layer: #147763;
+  --layer: #087b90;
 }
 .flow-layer header {
   color: var(--layer);

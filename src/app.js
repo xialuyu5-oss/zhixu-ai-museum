@@ -33,7 +33,7 @@ const rawNotes = getStore('notes', {}),
 const U = {
   phase: 0,
   motion: !prefersReduced.matches,
-  theme: getStore('theme', 'light') === 'dark' ? 'dark' : 'light',
+  theme: getStore('theme', 'dark') === 'light' ? 'light' : 'dark',
   route: 'entrance',
   page: 0,
   panel: {},
@@ -146,6 +146,7 @@ function readRoute() {
   }
 }
 function setTop() {
+  document.querySelector('meta[name=theme-color]')?.setAttribute('content', U.theme === 'dark' ? '#080f1f' : '#eff4fc');
   $('#motion').textContent = U.motion ? 'Ⅱ' : '▷';
   $('#motion').setAttribute('aria-label', U.motion ? '暂停动效' : '播放动效');
   $('#motion').setAttribute('aria-pressed', String(U.motion));
@@ -554,7 +555,7 @@ function paintSmall(type) {
     );
   if (type === 'context')
     return svg(
-      `${node(35, 30, 330, 155, '', 'node')}${[0, 1, 2, 3].map((i) => `<rect x="${50 + i * 77}" y="45" width="66" height="125" rx="5" fill="${['var(--teal)', '#8ea999', 'var(--copper)', '#8292a7'][i]}" opacity=".6"/><text x="${83 + i * 77}" y="199" text-anchor="middle" style="font-size:12px">${['目标', '证据', '历史', '输出'][i]}</text>`).join('')}`,
+      `${node(35, 30, 330, 155, '', 'node')}${[0, 1, 2, 3].map((i) => `<rect x="${50 + i * 77}" y="45" width="66" height="125" rx="5" fill="${['var(--teal)', 'var(--signal)', 'var(--copper)', 'var(--muted)'][i]}" opacity=".6"/><text x="${83 + i * 77}" y="199" text-anchor="middle" style="font-size:12px">${['目标', '证据', '历史', '输出'][i]}</text>`).join('')}`,
     );
   if (type === 'attention')
     return svg(
@@ -1616,7 +1617,7 @@ function loadArchive() {
 }
 function archiveNotice(text) {
   const dark = U.theme === 'dark';
-  return `<body style="margin:0;padding:28px 24px;font:15px/1.7 'Microsoft YaHei',sans-serif;color:${dark ? '#c6dbd3' : '#2c5755'};background:${dark ? '#182a2e' : '#f8faf6'}">${esc(I18n.t(text))}</body>`;
+  return `<body style="margin:0;padding:28px 24px;font:15px/1.7 'Microsoft YaHei',sans-serif;color:${dark ? '#a3b3ce' : '#526581'};background:${dark ? '#101c30' : '#ffffff'}">${esc(I18n.t(text))}</body>`;
 }
 function openArchive(route, title) {
   if (route === 'news') {
@@ -1657,7 +1658,7 @@ function openArchive(route, title) {
       `<iframe lang="zh-CN" id="archive-frame" title="馆藏工具：${esc(title || route)}" sandbox="allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-modals" referrerpolicy="no-referrer"></iframe>`,
     ),
   );
-  const css = `<style>html,body{margin:0;background:${U.theme === 'dark' ? '#182a2e' : '#f8faf6'}!important}.sidebar,.topbar,.footer,.m-resource-band,.m-header-actions,.skip-link{display:none!important}.app-shell{margin:0!important}#main{padding:18px!important;min-height:0!important;max-width:1500px!important;margin:0!important}.m-main{padding:18px!important}.m-article-layout{display:block!important}.catalog-table td{font-size:12px!important;line-height:1.8!important}.page-heading h1{font-size:26px!important}.article-layout,.h-lesson-layout{display:block!important}.article-aside,.h-lesson-aside{display:none!important}.article-main{padding:20px!important}@media(max-width:760px){#main,.m-main{padding:12px!important}.catalog-table td{font-size:11px!important}}</style>`;
+  const css = `<style>html,body{margin:0;background:var(--bg)!important}.sidebar,.topbar,.footer,.m-resource-band,.m-header-actions,.skip-link{display:none!important}.app-shell{margin:0!important}#main{padding:18px!important;min-height:0!important;max-width:1500px!important;margin:0!important}.m-main{padding:18px!important}.m-article-layout{display:block!important}.catalog-table td{font-size:12px!important;line-height:1.8!important}.page-heading h1{font-size:26px!important}.article-layout,.h-lesson-layout{display:block!important}.article-aside,.h-lesson-aside{display:none!important}.article-main{padding:20px!important}@media(max-width:760px){#main,.m-main{padding:12px!important}.catalog-table td{font-size:11px!important}}</style>`;
   const bridge = `<script>(function(){function move(){const hash=location.hash.slice(1);if(hash==='knowledge'||hash.startsWith('article/')||hash.startsWith('harness-lesson/'))parent.postMessage({kind:'museum-v08-native',route:hash},'*');}addEventListener('hashchange',move);addEventListener('load',move);addEventListener('message',e=>{if(e.source!==parent)return;if(e.data?.kind==='museum-theme')document.documentElement.dataset.theme=e.data.theme;});document.documentElement.dataset.theme=${JSON.stringify(U.theme)};})();<\/script>`;
   const frame = $('#archive-frame'),
     apply = (html) => {
@@ -2085,7 +2086,7 @@ function handleDo(b) {
       download(
         '助手设计与教学运行.json',
         JSON.stringify(
-          { version: '0.15.0', teachingOnly: true, spec: U.spec, run: U.run },
+          { version: '0.16.0', teachingOnly: true, spec: U.spec, run: U.run },
           null,
           2,
         ),
@@ -2362,7 +2363,7 @@ window.addEventListener('resize', () => {
   }, 120);
 });
 window.AtlasMuseum = Object.freeze({
-  version: '0.15.0',
+  version: '0.16.0',
   core: Core,
   conflict: FrictionModel,
   i18n: Object.freeze({

@@ -1,0 +1,242 @@
+/* Future laboratory. Semantic aliases keep every existing exhibit on one palette. */
+:root,
+html[data-theme='light'] {
+  color-scheme: light;
+  --bg: #eff4fc;
+  --paper: #ffffff;
+  --surface: #ffffffed;
+  --soft: #e5edfa;
+  --raised: #e1eafa;
+  --ink: #172940;
+  --muted: #526581;
+  --quiet: #5e718c;
+  --line: #cdd9ec;
+  --teal: #2855d9;
+  --signal: #087b90;
+  --copper: #985123;
+  --ochre: #876019;
+  --rust: #b64150;
+  --alert: #fbe9eb;
+  --night: #101c30;
+  --button: #2855d9;
+  --button-ink: #ffffff;
+  --program: #2855d9;
+  --cuda: #985123;
+  --gpu: #087b90;
+  --shadow: 0 16px 40px #16305b0a;
+  --ambient: #79a5ff16;
+  --grid: #527fb515;
+  --beam: #628bce;
+  --positive-bg: #dfedf3;
+  --positive-ink: #086579;
+  --warm-bg: #f5e9dd;
+}
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #080f1f;
+  --paper: #101c30;
+  --surface: #101c30ed;
+  --soft: #172a43;
+  --raised: #193553;
+  --ink: #eaf2ff;
+  --muted: #a3b3ce;
+  --quiet: #97abc8;
+  --line: #2a3c57;
+  --teal: #79a5ff;
+  --signal: #69dff1;
+  --copper: #ffc58c;
+  --ochre: #eed19a;
+  --rust: #ffa6b0;
+  --alert: #3d2539;
+  --night: #050b17;
+  --button: #90b5ff;
+  --button-ink: #091529;
+  --program: #79a5ff;
+  --cuda: #ffc58c;
+  --gpu: #69dff1;
+  --shadow: 0 16px 48px #00000026;
+  --ambient: #3978ea16;
+  --grid: #7cabed12;
+  --beam: #a1cfff;
+  --positive-bg: #153647;
+  --positive-ink: #69dff1;
+  --warm-bg: #352b32;
+}
+body {
+  background: radial-gradient(ellipse at 78% 0, var(--ambient), transparent 57%), var(--bg);
+}
+::selection { background: var(--teal); color: var(--button-ink); }
+html { scrollbar-color: var(--line) var(--paper); }
+h1, h2, .hero-title, .narrative-legend > strong, .entrance-ten-copy h1 {
+  font-family: var(--sans);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+html:is(:lang(zh), :lang(ja), :lang(ko)) :is(h1, h2) { letter-spacing: 0.01em; }
+[data-lesson='history10'] .depth-intro h2,
+.museum-conclusion h2, .coda h2 { font-family: var(--serif); font-weight: 500; }
+.brand b { font-family: var(--sans); font-weight: 450; letter-spacing: -0.06em; }
+.brand-art i { border-color: var(--teal); }
+.brand-art i + i { border-color: var(--signal); }
+.eyebrow, .depth-kicker, .micro-index { color: var(--signal); }
+.masthead, .journey, .pager { border-color: var(--line); }
+/* Reserve the actual navigation height, including its padding and border. */
+html[data-density] .deck { grid-template-rows: auto minmax(0, 1fr) max-content; }
+html[data-density='tight'] #main { padding-bottom: 0; }
+.topnav button.active { color: var(--teal); }
+.topnav button.active::after { background: var(--teal); }
+.icon, .locale-control select { background: var(--paper); border-color: var(--line); }
+.action, .tabs button, .lesson-tabs button, .depth-topic-tabs button,
+.story-modes > button, .narrative-switch, .choice-tile, .preset,
+.pager .dots button, .knowledge-tile, .news-card {
+  transition: background-color 180ms, border-color 180ms, color 180ms, box-shadow 180ms;
+}
+.action.primary, .action.primary:hover,
+.story-modes > button[aria-selected='true'],
+.pager .dots button.active,
+.depth-topic-tabs button.active,
+.reading-pager button[aria-current='page'],
+.research-paths > button.active,
+.history-compare-tabs button[aria-selected='true'],
+.station-view button[aria-pressed='true'],
+.run-controls button.primary {
+  background: var(--button);
+  color: var(--button-ink);
+  border-color: var(--button);
+  box-shadow: 0 4px 18px color-mix(in srgb, var(--teal) 13%, transparent);
+}
+.action.primary:hover { filter: brightness(1.07); }
+.story-modes > button[aria-selected='true'] > span { color: inherit; }
+.research-paths > button.active > span { color: inherit; }
+html[data-theme='dark'] .budget-bars span { color: var(--button-ink); }
+.budget-bars span:nth-child(2) { background: var(--signal); }
+.budget-bars span:nth-child(3) { background: var(--copper); }
+.budget-bars span:nth-child(4) { background: var(--muted); }
+.action:not(.primary):hover, .narrative-switch:hover { background: var(--soft); border-color: var(--teal); }
+button:focus-visible, a:focus-visible, select:focus-visible, textarea:focus-visible, input:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 3px;
+}
+.tabs, .lesson-tabs, .spec-head { background: var(--soft); border-color: var(--line); }
+.tabs button.active, .lesson-tabs button.active,
+.tabs button[aria-selected='true'], .lesson-tabs button[aria-selected='true'] {
+  background: var(--paper);
+  border-color: var(--line);
+  color: var(--teal);
+  box-shadow: inset 0 -2px var(--teal);
+}
+.specimen, .depth-lesson, .lesson, .story-exhibit,
+.research-station, .news-detail, .knowledge-tile, .native-reader {
+  background: var(--paper);
+  border-color: var(--line);
+  box-shadow: var(--shadow);
+}
+.specimen, .depth-lesson, .story-exhibit { border-radius: 16px; }
+.spec-head, .spec-foot, .depth-sources { border-color: var(--line); }
+.depth-explanation {
+  background: var(--soft);
+  border-color: var(--line);
+  box-shadow: -10px 12px 28px #0000000d;
+}
+.depth-callout, .reading-end, .source-box, .runtime-detail {
+  background: var(--paper);
+}
+.story-exhibit {
+  background: linear-gradient(145deg, var(--paper) 40%, var(--soft));
+  border-top-color: var(--teal);
+}
+.story-exhibit .story-stage {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background:
+    radial-gradient(ellipse at 50% 50%, var(--ambient), transparent 72%),
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: auto, 48px 48px, 48px 48px;
+  overflow: hidden;
+}
+.narrative-legend { padding-block: 3px; }
+.narrative-legend .signal-0 { background: var(--teal); }
+.narrative-legend .signal-1 { background: var(--copper); }
+.narrative-legend .signal-2 { background: var(--signal); }
+.narrative-switch i { background: var(--input-color); }
+.story-caption strong { color: var(--ink); }
+.entrance-ten h1 em { color: var(--signal); }
+.entrance-news-link { color: var(--signal); }
+.pager .dots button.active { box-shadow: inset 0 -2px color-mix(in srgb, var(--button-ink) 35%, transparent); }
+.pager-right > .action { background: var(--soft); }
+.journey-nav button.active { color: var(--signal); }
+.journey-nav button.active::before { background: var(--signal); }
+.era-card.before, .test-piece.incorrect { background: var(--warm-bg); }
+.era-card.now, .test-piece { background: var(--soft); }
+.test-piece.incorrect { border-color: var(--copper); }
+.sample-pass { background: var(--positive-bg); color: var(--positive-ink); }
+.sample-fail { background: var(--warm-bg); color: var(--copper); }
+.flow-layer { --layer: var(--program); }
+.flow-layer.cuda { --layer: var(--cuda); }
+.flow-layer.gpu { --layer: var(--gpu); }
+.plot-pass { fill: color-mix(in srgb, var(--signal) 10%, transparent); }
+.plot-fail { fill: color-mix(in srgb, var(--copper) 10%, transparent); }
+.goal { --lab-fill: color-mix(in srgb, var(--teal) 25%, transparent); }
+.evidence { --lab-fill: color-mix(in srgb, var(--signal) 25%, transparent); }
+.history { --lab-fill: color-mix(in srgb, var(--muted) 22%, transparent); }
+.noise, .poor { --lab-fill: color-mix(in srgb, var(--copper) 25%, transparent); }
+.summary { --lab-fill: color-mix(in srgb, var(--signal) 18%, transparent); }
+.output { --lab-fill: color-mix(in srgb, var(--ochre) 25%, transparent); }
+.diagram .node, .depth-chart .node { stroke: var(--line); }
+.diagram .accent, .depth-chart .accent { stroke: var(--signal); }
+.feature-art { --teal: #79a5ff; --line: #35527a; --soft: #193553; --ink: #eaf2ff; --muted: #a3b3ce; --copper: #ffc58c; }
+.gallery-feature { background: #101c30; color: #eaf2ff; border: 1px solid #2a3c57; }
+.gallery-feature :is(p, .eyebrow, .feature-foot) { color: #a3b3ce; }
+.gallery-feature .action { background: #90b5ff; color: #091529; border-color: #90b5ff; }
+.collaboration-scene { background: var(--soft); border-color: var(--line); }
+.collaboration-scene figcaption {
+  background: linear-gradient(transparent, var(--paper) 45%);
+  color: var(--ink);
+}
+.collaboration-scene b { color: var(--copper); }
+.collaboration-scene > small { color: var(--ink); background: var(--surface); }
+.collaboration-track { background: linear-gradient(90deg, transparent, var(--teal), var(--signal), transparent); }
+.collaboration-track i { background: var(--signal); box-shadow: 0 0 9px color-mix(in srgb, var(--signal) 55%, transparent); }
+.scene-visual {
+  border-color: var(--line);
+  background: radial-gradient(ellipse at 50% 50%, var(--ambient), transparent 70%), var(--paper);
+}
+.workflow-drawer.active, .connection-node.model, .connection-node.server { background: var(--soft); border-color: var(--teal); }
+.news-status, .research-aside, .station-insight { background: var(--soft); }
+.news-card.active { background: var(--soft); border-color: var(--teal); }
+.museum-conclusion { background: radial-gradient(ellipse at 50% 10%, var(--ambient), transparent 65%); }
+.conclusion-arc article { border-color: var(--line); }
+.conclusion-arc article > span { color: var(--signal); }
+.coda { background: var(--bg); }
+.coda h2 em { color: var(--signal); }
+.coda-light {
+  opacity: 0.85;
+  background: radial-gradient(ellipse at 50% 85%, var(--ambient), transparent 65%);
+  mask-image: radial-gradient(ellipse at center, #000 15%, transparent 72%);
+}
+.coda-light::before, .coda-light::after {
+  filter: none;
+  background: linear-gradient(158deg, transparent 21%,
+    color-mix(in srgb, var(--beam) 2%, transparent) 27%,
+    color-mix(in srgb, var(--beam) 24%, transparent) 34%,
+    color-mix(in srgb, var(--beam) 7%, transparent) 41%, transparent 49%);
+}
+.coda-light::after {
+  background: linear-gradient(156deg, transparent 30%,
+    color-mix(in srgb, var(--signal) 14%, transparent) 42%, transparent 56%);
+}
+.coda-note textarea { background: var(--surface); }
+dialog { background: var(--paper); color: var(--ink); border-color: var(--line); }
+dialog::backdrop { background: #020713b8; }
+/* Repaint only data graphics during state changes. Text and layout stay stationary. */
+.lab-bars i, .lab-probability i, .prob-bar i, .attention-link {
+  transition: width 300ms var(--ease), opacity 300ms var(--ease), fill 300ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+html[data-motion='off'] *, html[data-motion='off'] *::before, html[data-motion='off'] *::after {
+  animation: none !important;
+  transition: none !important;
+}
